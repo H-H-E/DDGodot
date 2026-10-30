@@ -1,0 +1,157 @@
+{
+  "status": "passed",
+  "total_passes": 2,
+  "total_browser_scenarios": 86,
+  "same_source_and_export": true,
+  "passes": [
+    {
+      "pass": 1,
+      "report": "evidence/verification/browser-release-1.json",
+      "run_id": "release-final-1",
+      "started_at": "2026-10-30T20:43:43.573Z",
+      "finished_at": "2026-10-30T20:48:46.409Z",
+      "source_sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+      "runtime_sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+      "build_id": "a9f5adc38198c5eb",
+      "video_recording": true,
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "141.0.7390.37",
+          "passed_scenarios": 29,
+          "startup": {
+            "wall_startup_ms": 1692,
+            "engine_loaded_ms": 1404.5999999977648
+          },
+          "console_warnings": [],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": [
+            "evidence/recordings/release-final-1-chromium-desktop-playthrough.webm",
+            "evidence/recordings/release-final-1-chromium-mobile-touch-playthrough.webm"
+          ],
+          "performance": {
+            "sample_duration_ms": 2522.4000000014894,
+            "rendered_frame_intervals": 75,
+            "mean_frame_ms": 33.11066666666666,
+            "p95_frame_ms": 50.100000000000364,
+            "heap_bytes": 86400000,
+            "environment": "headless Chromium, software WebGL on managed Linux",
+            "fps_from_mean_interval": 30.201747674465434
+          }
+        },
+        {
+          "engine": "firefox",
+          "version": "142.0.1",
+          "passed_scenarios": 7,
+          "startup": {
+            "wall_startup_ms": 2201,
+            "engine_loaded_ms": 1865
+          },
+          "console_warnings": [
+            {
+              "scenario": "startup",
+              "type": "warning",
+              "message": "[JavaScript Warning: \"The WebAssembly exception handling 'try' instruction is deprecated and should no longer be used. Please recompile to use the 'try_table' instruction instead.\"]"
+            }
+          ],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": []
+        },
+        {
+          "engine": "webkit",
+          "version": "26.0",
+          "passed_scenarios": 7,
+          "startup": {
+            "wall_startup_ms": 4059,
+            "engine_loaded_ms": 2549
+          },
+          "console_warnings": [],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": []
+        }
+      ]
+    },
+    {
+      "pass": 2,
+      "report": "evidence/verification/browser-release-2.json",
+      "run_id": "release-final-2",
+      "started_at": "2026-10-30T20:51:08.067Z",
+      "finished_at": "2026-10-30T20:56:09.580Z",
+      "source_sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+      "runtime_sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+      "build_id": "a9f5adc38198c5eb",
+      "video_recording": false,
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "141.0.7390.37",
+          "passed_scenarios": 29,
+          "startup": {
+            "wall_startup_ms": 1434,
+            "engine_loaded_ms": 1144.699999999255
+          },
+          "console_warnings": [],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": [],
+          "performance": {
+            "sample_duration_ms": 2527.699999999255,
+            "rendered_frame_intervals": 102,
+            "mean_frame_ms": 24.50882352941176,
+            "p95_frame_ms": 33.400000000001455,
+            "heap_bytes": 86400000,
+            "environment": "headless Chromium, software WebGL on managed Linux",
+            "fps_from_mean_interval": 40.80163206528262
+          }
+        },
+        {
+          "engine": "firefox",
+          "version": "142.0.1",
+          "passed_scenarios": 7,
+          "startup": {
+            "wall_startup_ms": 2212,
+            "engine_loaded_ms": 1891
+          },
+          "console_warnings": [
+            {
+              "scenario": "startup",
+              "type": "warning",
+              "message": "[JavaScript Warning: \"The WebAssembly exception handling 'try' instruction is deprecated and should no longer be used. Please recompile to use the 'try_table' instruction instead.\"]"
+            }
+          ],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": []
+        },
+        {
+          "engine": "webkit",
+          "version": "26.0",
+          "passed_scenarios": 7,
+          "startup": {
+            "wall_startup_ms": 5184,
+            "engine_loaded_ms": 3121
+          },
+          "console_warnings": [],
+          "console_errors": 0,
+          "page_errors": 0,
+          "failed_requests": 0,
+          "http_errors": 0,
+          "recordings": []
+        }
+      ]
+    }
+  ]
+}

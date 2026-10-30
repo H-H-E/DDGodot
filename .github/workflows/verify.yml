@@ -1,0 +1,42 @@
+name: Verify Godot and web export
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned free toolchain
+        run: |
+          bash tools/install_godot.sh
+          npm ci
+          npx playwright install --with-deps chromium firefox webkit
+          python -m pip install -r tools/autopilot-requirements.txt
+      - name: Native, Autopilot and browser verification twice
+        env:
+          GODOT_BIN: ${{ github.workspace }}/.tools/godot/Godot_v4.7.2-stable_linux.x86_64
+          DD_EXPORT_DATA_HOME: ${{ github.workspace }}/.tools/data
+        run: bash tools/run_checks.sh
+      - name: Preserve web build and evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostic-dash-web-and-evidence
+          path: |
+            dist/diagnostic-dash-web.zip
+            evidence/runs/
+            evidence/screenshots/
+          retention-days: 14

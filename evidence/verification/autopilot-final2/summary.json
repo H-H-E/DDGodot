@@ -1,0 +1,64 @@
+{
+  "pass_label": 2,
+  "runner": "DDGodot deterministic local driver using upstream Autopilot instrumentation",
+  "not_a_model_inference_run": true,
+  "paid_services_used": [],
+  "upstream_commit": "1818cc337b20762cd50102bc774a8e45eb7c4dc7",
+  "engine_version": "4.7.2-stable (official)",
+  "build_id_at_validation": "a9f5adc38198c5eb",
+  "checks_passed": 69,
+  "checks_total": 69,
+  "elapsed_seconds": 48.393,
+  "source_unchanged_during_run": true,
+  "source_hashes_match_current_files": true,
+  "source_hashes": {
+    "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+    "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+    "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+    "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+    "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+    "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+    "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+    "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+    "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+    "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+    "tools/autopilot_bootstrap.gd": "d4d38a534c24f0f637cdc9bbcab131ce528a013b0be42cb1b022b79031d1649f",
+    "tools/autopilot_local.py": "cad2d60f5b5a26e905d2d3f036f7743b64182bcd69fc05e205d803283cd94a3a"
+  },
+  "gzip_complete": true,
+  "trace_json_lines": 1544,
+  "requests": 747,
+  "responses": 747,
+  "request_response_ids_match_exactly": true,
+  "request_ids_unique_and_contiguous": true,
+  "key_inputs": 86,
+  "ui_mouse_clicks": 31,
+  "ui_option_selections": 12,
+  "reflection_functions": {
+    "get_snapshot": 564
+  },
+  "reflection_is_read_only_snapshot": true,
+  "expected_negative_operation_responses": [
+    "ddgodot_unknown_operation",
+    "capture"
+  ],
+  "engine_or_script_errors": [],
+  "source_report_file_mtime_utc": "2026-10-30T20:45:26.081825+00:00",
+  "validated_utc": "2026-10-30T20:51:53.066430+00:00",
+  "validation_note": "Current complete traces independently validated; earlier incomplete trace excluded. Output directory labels are identifiers, not chronological execution order.",
+  "files": {
+    "report.json": {
+      "sha256": "6d18cb524bd3b3861434638ee6761923022da0c2d4e7fd34ec6df9ec2bf97214",
+      "bytes": 87098
+    },
+    "trace.jsonl.gz": {
+      "sha256": "387e57ade3fd6bb979850d1be4d4d00d0c648ab963e19ed9b54f733a646fbb73",
+      "bytes": 109697
+    },
+    "godot.log": {
+      "sha256": "1e46191e9c56cd5718acee5f1853d0f7d3ede096bcac85523a31b8b074c32a79",
+      "bytes": 172
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "source": {
+    "sha256": "91afcf4ae35c68f491e883bd7b4631defe5ed1d9b3bb184b0c8c272003d10877",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp8",
+          "width": 960,
+          "height": 600,
+          "r_frame_rate": "25/1",
+          "nb_read_packets": "5337"
+        }
+      ],
+      "format": {
+        "duration": "213.480000",
+        "size": "14495298"
+      }
+    }
+  },
+  "delivered": {
+    "sha256": "e65337911c3ceedf1e941b01db303694b81af811addabb712820bfbdc6ce7336",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "width": 960,
+          "height": 600,
+          "r_frame_rate": "25/1",
+          "nb_read_packets": "5337"
+        }
+      ],
+      "format": {
+        "duration": "213.480000",
+        "size": "4887169"
+      }
+    }
+  },
+  "path": "evidence/recordings/release-final-1-chromium-desktop-playthrough.webm",
+  "reason": "Fit the connector request limit while retaining the entire captured frame sequence at original dimensions and frame rate.",
+  "transcode": "ffmpeg -i source.webm -c:v libvpx-vp9 -crf 35 -b:v 0 -row-mt 1 -cpu-used 5 -threads 4 delivered.webm",
+  "qualification": "Lossy video recompression; no session trimming, speed change or synthetic frames. Original screenshots are preserved separately."
+}

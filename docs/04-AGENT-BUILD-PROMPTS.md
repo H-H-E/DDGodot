@@ -1,0 +1,343 @@
+# 04 — Sequential agent build and continuation prompts
+
+These prompts describe executable vertical slices of this repository. They are also a handoff for continuing the implementation. **Inspect the existing code and current QA report before changing anything; completed slices should be verified, not replaced with a second implementation.** The authoritative release evidence is [07-QA-REPORT.md](07-QA-REPORT.md).
+
+Each fenced block is a complete prompt for a coding agent. Run them in order when building from an empty project. When continuing the existing project, begin with Prompt 0, select the relevant slice, then run the final release gate. A prompt is finished only when its acceptance criteria are observed; code that has not run is not a pass.
+
+## Prompt 0 — Reproduce the current baseline
+
+```text
+You are continuing DDGodot, a Godot remake of Diagnostic Dash. Read README.md,
+docs/01-GAME-DNA.md, docs/02-GAME-DESIGN-DOCUMENT.md,
+docs/03-IMPLEMENTATION-BLUEPRINT.md, docs/LEARNING-PARITY.md,
+docs/AUTOPILOT-AUDIT.md and docs/07-QA-REPORT.md before editing.
+
+Objective: establish an honest, reproducible baseline for the requested work.
+
+Context: the original source baseline is H-H-E/geometrymash commit
+f43bf817e8dc20c554615a9fd39cb79585fab8c2. The new project uses Godot 4.7.2,
+Compatibility rendering, GDScript and single-threaded web export. Source,
+native execution and web-browser execution are separate evidence categories.
+
+Required work:
+1. Inspect repository status, project.godot, export presets and test scripts.
+2. Confirm the engine version and available browser engines.
+3. Run the README's current import and native tests without changing them.
+4. Launch the existing complete journey if present. Record exact commands,
+   exit codes, missing dependencies and failing assertions.
+5. Classify each problem as pre-existing, introduced by this task, or unknown.
+
+Constraints: preserve user changes and published Git history; do not force push.
+Do not use paid APIs, subscriptions or hosted inference. Use synthetic local
+learner slots for testing. Do not access production learner records.
+
+Acceptance: a baseline report identifies the checked commit, actual tools and
+real outcomes. Missing browsers are marked unavailable, not passed.
+Output: concise baseline notes and a selected next slice. Proceed only after
+you can explain how the requested change interacts with evidence and timing.
+```
+
+## Prompt 1 — A runnable shell and complete navigation path
+
+```text
+Objective: make title → setup → gameplay shell → results → replay a runnable
+Godot journey before adding elaborate visuals.
+
+Context/files: project.godot, scenes/main.tscn, scripts/main.gd. Read the game
+design and implementation blueprint. Root scene name Main is stable for tests.
+
+Required implementation:
+- Use Godot 4.7.2 and the Compatibility renderer.
+- Create real Godot Controls with stable descriptive names and visible focus.
+- Offer Practice, Classic and Cadence presets; four operations and mixed;
+  range 5/10/12; target 6/12/24; local learner slots 1/2/3.
+- Keep setup choices when going back and forth. Start once per user intent.
+- Establish explicit menu, running, paused and results states. Results must be
+  a projection of a session object, not invented statistics.
+- Route clicks, keyboard shortcuts and touch to the same intent handlers.
+
+Constraints: do not mix profile selection with authentication. Do not claim
+Cadence is an exact original mode; the source had separate mode/course axes.
+Do not put remote services or a login gate on the standalone play path.
+
+Tests: import with godot --headless --editor --path . --import; run a native
+launch; navigate start/back/pause/resume/results/replay through actual controls.
+Repeat rapid Start and Replay clicks and verify one active session.
+
+Acceptance: every visible action works, focus remains visible, no parser or
+runtime error occurs, and a new replay receives a different session identity.
+Outputs: runnable scene/UI, state transition notes and executable checks.
+Proceed when the whole journey works without pretending the learning system
+has already been validated.
+```
+
+## Prompt 2 — Port the arithmetic and trustworthy evidence
+
+```text
+Objective: implement isolated arithmetic, scheduling and occurrence evidence
+with deterministic comparison against the real original source.
+
+Context/files: scripts/learning.gd, tests/test_learning.gd,
+tools/generate_learning_fixtures.mjs, tests/fixtures/learning_original.json,
+docs/LEARNING-PARITY.md. Read the original scheduler, patterns, run-evidence
+document and first-try tests at the pinned source commit.
+
+Required implementation:
+- Preserve zero-inclusive addition, source subtraction construction, the
+  12-times-table multiplication cap, exact division and operation filtering.
+- Isolate the RNG, clock, learner bucket and per-session queues.
+- Port selection priority and pattern classification where specified. Use
+  fixtures generated by executing the original, not handwritten expected data.
+- Track one opportunity per observed occurrence; retries do not create new
+  first attempts. Leaving an unobserved question counts nothing.
+- Mark hints and post-timeout retries assisted. Assisted success cannot
+  promote independent fluency or preserve an interrupted independent streak.
+- Keep timeout durations separate from actual submitted-response latency.
+- Name aggregate event counts, submissions and response denominators clearly.
+
+Tests: pool sizes/answers/keys across operations, seeded selection traces,
+assisted versus independent answers, inferred reverse facts, duplicate input,
+wrong→retry→timeout, timeout→correct retry, zero responses and invalid states.
+Run godot --headless --path . --script tests/test_learning.gd.
+
+Acceptance: parity fixtures pass; intentional deviations have explicit tests
+and documentation. No inferred or imported history creates fake recent data.
+Outputs: learning core, fixture generator, tests and parity report.
+Proceed only when the actual engine executes the tests successfully.
+```
+
+## Prompt 3 — Build a fair, deterministic runner
+
+```text
+Objective: make the runner feel responsive while keeping simulation independent
+of drawing and arithmetic evidence.
+
+Context/files: scripts/course.gd, scripts/runner_view.gd, scripts/main.gd.
+DashCourse is a RefCounted simulation; DashRunnerView draws its current state.
+
+Required implementation:
+- Advance course state at fixed physics steps and checkpoint seed/RNG state.
+- Use named gravity/jump constants, a 120 ms input buffer and a visible ground.
+- Add readable geometric hazards within the tested jump envelope.
+- Provide Space/Jump button and default motor assistance. Base automatic jump
+  timing on contact time at the selected pace, not only a fixed pixel distance.
+- Let correct arithmetic clear the associated gate/hazard once.
+- Keep collisions recoverable and separate from arithmetic mistake counts.
+- Make Practice approach slow and wait without creating a deadline.
+- Keep rotation, particles, view projection and shake outside physics values.
+
+Constraints: flat ground does not justify claiming coyote time. Do not invent
+unavoidable course combinations to create difficulty. A seed must reproduce
+the same logical hazard sequence irrespective of viewport or reduced motion.
+
+Tests: compare repeated seeded simulations; verify jump apex/landing, buffered
+input before landing, intentional hit/recovery, auto-jump at all pace settings,
+old-gate retirement, and equal collisions under alternate display sizes.
+
+Acceptance: native tests pass and rendered play shows readable hazards and
+immediate input. Record actual tuning values and unresolved subjective issues.
+Outputs: simulation, renderer, focused tests and sample gameplay captures.
+Proceed when both logical fairness and rendered behavior have been checked.
+```
+
+## Prompt 4 — Connect thinking, gates and active time
+
+```text
+Objective: connect the real learning core and runner into a complete session.
+
+Context/files: scripts/main.gd, learning.gd, course.gd, runner_view.gd.
+Use the public core APIs rather than duplicating math or ledger calculations.
+
+Required implementation:
+- Each question owns one gate. Digits and Backspace edit; Enter or Submit
+  deliberately evaluates. A correct answer clears and advances exactly once.
+- Wrong input gives readable feedback and permits retry; hint use is explicit.
+- Practice has no timeout. Classic/Cadence use visible pace budgets 14/10/7s.
+- At a deadline, record one timeout, keep the occurrence retryable, and mark
+  eventual success assisted. Repeated frames cannot add repeated timeouts.
+- Measure active response intervals with a monotonic clock separate from
+  fixed simulation time. Exclude pause, hidden page, settings and time away.
+- Finish at 6/12/24 solved gates, or on explicit early finish. Do not invent
+  evidence for the currently unanswered question.
+
+Tests: complete sessions across operations/modes, wrong then correct, hint
+before first response, timeout then recovery, input at the exact gate boundary,
+repeated Enter, pause with partially typed answer, and finish before any input.
+Assert actual ledger values, solved progress and screen transitions.
+
+Acceptance: the player can start, answer, recover, finish and replay. Every
+result is derivable from recorded occurrences. Pausing changes no active age.
+Outputs: working integration and boundary regression tests. Proceed when real
+input completes a session rather than a test directly incrementing counters.
+```
+
+## Prompt 5 — Save, recover and separate learners
+
+```text
+Objective: make interrupted sessions and completed evidence durable locally.
+
+Context/files: scripts/save_store.gd, scripts/learning.gd, scripts/course.gd,
+scripts/main.gd. The standalone game has local slots, not authenticated users.
+
+Required implementation:
+- Use versioned JSON with strict shape, finite-number and counter validation.
+- Write a temporary validated file before replacing the previous save and
+  preserve a useful backup. Propagate write/read failures to visible UI.
+- Save complete transaction boundaries plus a periodic active checkpoint.
+- Store typed input, occurrence flags, scheduler, course, seed, setup and
+  active ages. Never persist an absolute process-local monotonic timestamp.
+- Offer explicit Resume/Discard. Restored input must not auto-submit.
+- Isolate all settings/evidence/checkpoints by the selected local learner.
+- Complete each stable session ID once; identical repeated payloads are
+  idempotent, conflicting payloads under the same ID are rejected.
+- Preserve corrupt/unsupported data until a deliberate recovery/reset action.
+- Verify the web filesystem actually survives a browser reload.
+
+Tests: reload during a retry, paused reload, time-away exclusion, profile A/B
+separation, repeated completion, conflicting payload, truncated/invalid JSON,
+write failure and backup restoration. Use temporary synthetic data only.
+
+Acceptance: a real restart resumes correctly; no false saved-success message;
+no duplicate result; no learner evidence crossover. Explain any multi-tab or
+cross-device limitations.
+Outputs: storage adapter, recovery UI, tests and documented schema. Proceed
+only after native and browser persistence are independently exercised.
+```
+
+## Prompt 6 — Make the play path accessible and calm
+
+```text
+Objective: polish the usable play experience without altering evidence rules.
+
+Context/files: scripts/main.gd, runner_view.gd, sound.gd, local assets and web
+shell. Follow docs/02-GAME-DESIGN-DOCUMENT.md and retain source boundaries.
+
+Required implementation:
+- Prioritize readable equation/input, clear route progress and reachable pause.
+- Provide large touch targets, keyboard focus and predictable Back/Escape.
+- Reflow portrait and short windows; retain every required control at 200%
+  browser zoom or document exact remaining limitations.
+- Add reduced motion, high contrast, mute/volume and cosmetic cube colors.
+- Use local original vector/procedural artwork and local synthesized sound.
+- Start browser audio only after interaction; mute must be effective in play.
+- Make Cadence rhythm derive from the gate clock; silence cannot affect logic.
+- Make feedback explanatory, with no punitive labels or diagnostic overclaims.
+
+Tests: keyboard-only full journey, touch-only full journey, 390×844 portrait,
+tablet, desktop and short viewport, reduced motion, sound on/off and browser
+zoom. Capture title, setup, run, error/hint, pause, recovery and results.
+Inspect screenshots for clipping, contrast, overlap and composition.
+
+Acceptance: no hidden essential action, no accidental duplicate submit from
+focus, no effects covering a question. Identical inputs produce identical
+evidence with effects and audio off. Do not claim screen-reader/WCAG conformance
+without direct validation.
+Outputs: polished controls, settings, screenshots and concrete remaining gaps.
+Proceed only after reviewing rendered images, not just test return values.
+```
+
+## Prompt 7 — Exercise the actual Autopilot addon for free
+
+```text
+Objective: integrate the required ramenvr/autopilot source honestly, without
+depending on Aura, Jev, a trial, hosted inference or a paid API.
+
+Context/files: addons/autopilot/, tools/autopilot_bootstrap.gd,
+tools/autopilot_local.py, tools/autopilot-requirements.txt,
+docs/AUTOPILOT-AUDIT.md, THIRD_PARTY_NOTICES.md.
+
+Required work:
+- Inspect upstream README, CONTRIBUTING, Godot docs, adapter and runtime.
+- Preserve the actual addon and its license at the recorded upstream revision.
+- Distinguish local instrumentation from paid/model-dependent orchestration.
+- Use the test-only bootstrap to load the addon plus the normal Main scene.
+- Bind the separate deterministic driver to loopback on an ephemeral port,
+  disable sharing and use synthetic temporary learner state.
+- Drive real UI controls and key events using upstream protocol operations.
+- Read snapshots only to make assertions; never call solve/advance methods
+  through reflection to simulate successful user input.
+- Save report.json, protocol trace and Godot log with scenario and exit status.
+
+Tests: provenance hashes, protocol handshake, scene/UI inspection, real key
+input, pause, invalid operations, honest headless screenshot refusal, and
+complete gameplay goals. Run both --scenario bridge and --scenario goals.
+
+Acceptance: actual upstream instrumentation executed; all required assertions
+pass; no network beyond loopback or paid provider was needed. Reports say
+'deterministic local driver using Autopilot instrumentation', not an Aura/Jev
+model run.
+Outputs: working bridge, local driver, audit, license/provenance and raw evidence.
+Proceed when a real complete gameplay goal is verified separately from bridge
+connectivity.
+```
+
+## Prompt 8 — Export and test the actual browser game
+
+```text
+Objective: prove the shipped WASM game can be played in supported browsers.
+
+Context/files: export_presets.cfg, web shell, export/serve tooling, browser
+test suite, docs/05-TEST-PLAN.md. Read README for exact current commands.
+
+Required work:
+- Export using the matching Godot 4.7.2 templates, Compatibility renderer and
+  single-threaded web preset. Exclude development instrumentation and fixtures.
+- Serve output over local HTTP with correct MIME types. Capture startup errors.
+- Run Chromium, Firefox and WebKit where the environment can execute them.
+  Record unavailable engines explicitly; do not silently substitute Chromium.
+- Use real keyboard/pointer/touch input for menus and answer entry. A QA-only
+  read snapshot may supply assertions; it may not replace user actions.
+- Cover settings, operations, modes, error/retry/hint/timeout, pause, collision,
+  recovery, completion/replay, reload saves, profile separation and navigation.
+- Capture screenshots and browser console/resource failures. Measure startup
+  and frame intervals under stated environment conditions.
+
+Tests: full-session journeys at desktop/tablet/phone sizes; touch and keyboard;
+200% zoom; offline after assets are loaded; repeated transitions and a long
+session; audio activation/mute; stable behavior under rapid input.
+
+Acceptance: a user can complete the full loop in every browser claimed as
+supported. No WASM/WebGL failure or hidden essential control remains. Missing
+hardware/browser coverage is listed with a reproducible next command.
+Outputs: functional export, reproducible tooling, browser reports, screenshots
+and performance measurements. Proceed only after inspecting the actual export.
+```
+
+## Prompt 9 — Repair, compare and deliver evidence
+
+```text
+Objective: finish the release with an evidence-backed comparison and no hidden
+release blocker. Implementation, test success and good design are separate.
+
+Context/files: all source and test files; docs/05-TEST-PLAN.md,
+docs/06-ORIGINAL-VS-REMAKE.md, docs/07-QA-REPORT.md, README.md and artifacts.
+
+Required work:
+1. Classify each failure by severity and root cause. Fix crashes, progression,
+   math/evidence errors, inaccessible controls and broken web export first.
+2. Add a focused regression for every significant bug. Do not weaken a valid
+   assertion or delete a failing scenario to produce a green report.
+3. Review rendered gameplay for legibility, control satisfaction, fair lead
+   time, mistake recovery and replay friction. Convert concrete concerns into
+   changes and testable checks; identify subjective items needing learners.
+4. Run the complete release suite twice consecutively with no code changes
+   between runs. A later source fix resets the two-pass gate.
+5. Compare the original and remake only where there is meaningful evidence.
+   Include original features not yet ported and unavailable platforms.
+6. Update all seven requested docs, exact commands, licenses and limitations.
+7. Inspect the diff for credentials, real learner records, generated caches and
+   unnecessary large binaries. Preserve source history and existing work.
+8. Commit/push only to the repository and branch authorized for this task.
+
+Acceptance: a browser player can start, answer, jump, recover, finish, inspect
+trustworthy results and replay for free; automation reproduces representative
+journeys; two unchanged full passes are recorded; remaining limits are explicit.
+Outputs: source, playable export path, docs, raw reports/screenshots, commit SHA
+and concise delivery summary with exact tested commands. Do not describe the
+remake as superior in a category without a real comparison or call unavailable
+features complete.
+```
+
+## Handoff discipline
+
+Use one owner per subsystem when agents work in parallel. Shared integration contracts—state names, snapshot fields, timeout behavior and save schema—must be agreed before both sides change. A test failure is an integration signal, not an invitation for two agents to overwrite each other's code. If the task spans sessions, record the last executed commit and the remaining release gate so the next agent does not confuse an old pass with the current code.

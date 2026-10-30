@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "generated_at": "2026-10-30T20:56:38.314022+00:00",
+  "verification_status": "two complete unchanged game/export passes verified",
+  "target_repository": "H-H-E/DDGodot",
+  "target_branch": "main",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "build_id": "a9f5adc38198c5eb",
+  "native_source_sha256": "8d53abfc1ed8ad989f27ae2ad5f2045f17f3e564bfcff1a9299c8d1c2bcbfc92",
+  "browser_source_sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+  "web_runtime_sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+  "archive": {
+    "path": "dist/diagnostic-dash-web.zip",
+    "bytes": 10672413,
+    "sha256": "a27aad6af82459e0a655b547d43820e011ad162c3678d1267267f201c7bba0ee",
+    "engine_and_game_bytes": 40360818
+  },
+  "native": [
+    {
+      "pass": 1,
+      "source_unchanged": true,
+      "suites": [
+        {
+          "suite": "learning",
+          "assertions": 8267,
+          "scenarios": 11
+        },
+        {
+          "suite": "game",
+          "assertions": 13203,
+          "scenarios": 10
+        },
+        {
+          "suite": "session",
+          "assertions": 138,
+          "scenarios": 8
+        }
+      ],
+      "assertions": 21608,
+      "scenarios": 29
+    },
+    {
+      "pass": 2,
+      "source_unchanged": true,
+      "suites": [
+        {
+          "suite": "learning",
+          "assertions": 8267,
+          "scenarios": 11
+        },
+        {
+          "suite": "game",
+          "assertions": 13203,
+          "scenarios": 10
+        },
+        {
+          "suite": "session",
+          "assertions": 138,
+          "scenarios": 8
+        }
+      ],
+      "assertions": 21608,
+      "scenarios": 29
+    }
+  ],
+  "autopilot_chronological": [
+    {
+      "output_id": "autopilot-final2",
+      "passed": 69,
+      "checks": 69,
+      "seconds": 48.393,
+      "source_unchanged": true,
+      "fully_decoded_trace_frames": 1544,
+      "matched_requests": 747,
+      "summary": "evidence/verification/autopilot-final2/summary.json",
+      "trace_sha256": "387e57ade3fd6bb979850d1be4d4d00d0c648ab963e19ed9b54f733a646fbb73"
+    },
+    {
+      "output_id": "autopilot-final1",
+      "passed": 69,
+      "checks": 69,
+      "seconds": 48.215,
+      "source_unchanged": true,
+      "fully_decoded_trace_frames": 1534,
+      "matched_requests": 742,
+      "summary": "evidence/verification/autopilot-final1/summary.json",
+      "trace_sha256": "2e0119d26475ff9b54df44cb9f040f0334ccc8f889e0ebff1fc21bb893feb322"
+    }
+  ],
+  "browser": [
+    {
+      "run_id": "release-final-1",
+      "started_at": "2026-10-30T20:43:43.573Z",
+      "finished_at": "2026-10-30T20:48:46.409Z",
+      "scenarios": 43,
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "141.0.7390.37",
+          "passed_scenarios": 29,
+          "startup_localhost": {
+            "wall_startup_ms": 1692,
+            "engine_loaded_ms": 1404.5999999977648
+          },
+          "runtime_errors": 0,
+          "warnings": [],
+          "performance": {
+            "sample_duration_ms": 2522.4000000014894,
+            "rendered_frame_intervals": 75,
+            "mean_frame_ms": 33.11066666666666,
+            "p95_frame_ms": 50.100000000000364,
+            "heap_bytes": 86400000,
+            "environment": "headless Chromium, software WebGL on managed Linux",
+            "fps_from_mean_interval": 30.201747674465434
+          }
+        },
+        {
+          "engine": "firefox",
+          "version": "142.0.1",
+          "passed_scenarios": 7,
+          "startup_localhost": {
+            "wall_startup_ms": 2201,
+            "engine_loaded_ms": 1865
+          },
+          "runtime_errors": 0,
+          "warnings": [
+            {
+              "scenario": "startup",
+              "type": "warning",
+              "message": "[JavaScript Warning: \"The WebAssembly exception handling 'try' instruction is deprecated and should no longer be used. Please recompile to use the 'try_table' instruction instead.\"]"
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "version": "26.0",
+          "passed_scenarios": 7,
+          "startup_localhost": {
+            "wall_startup_ms": 4059,
+            "engine_loaded_ms": 2549
+          },
+          "runtime_errors": 0,
+          "warnings": []
+        }
+      ]
+    },
+    {
+      "run_id": "release-final-2",
+      "started_at": "2026-10-30T20:51:08.067Z",
+      "finished_at": "2026-10-30T20:56:09.580Z",
+      "scenarios": 43,
+      "engines": [
+        {
+          "engine": "chromium",
+          "version": "141.0.7390.37",
+          "passed_scenarios": 29,
+          "startup_localhost": {
+            "wall_startup_ms": 1434,
+            "engine_loaded_ms": 1144.699999999255
+          },
+          "runtime_errors": 0,
+          "warnings": [],
+          "performance": {
+            "sample_duration_ms": 2527.699999999255,
+            "rendered_frame_intervals": 102,
+            "mean_frame_ms": 24.50882352941176,
+            "p95_frame_ms": 33.400000000001455,
+            "heap_bytes": 86400000,
+            "environment": "headless Chromium, software WebGL on managed Linux",
+            "fps_from_mean_interval": 40.80163206528262
+          }
+        },
+        {
+          "engine": "firefox",
+          "version": "142.0.1",
+          "passed_scenarios": 7,
+          "startup_localhost": {
+            "wall_startup_ms": 2212,
+            "engine_loaded_ms": 1891
+          },
+          "runtime_errors": 0,
+          "warnings": [
+            {
+              "scenario": "startup",
+              "type": "warning",
+              "message": "[JavaScript Warning: \"The WebAssembly exception handling 'try' instruction is deprecated and should no longer be used. Please recompile to use the 'try_table' instruction instead.\"]"
+            }
+          ]
+        },
+        {
+          "engine": "webkit",
+          "version": "26.0",
+          "passed_scenarios": 7,
+          "startup_localhost": {
+            "wall_startup_ms": 5184,
+            "engine_loaded_ms": 3121
+          },
+          "runtime_errors": 0,
+          "warnings": []
+        }
+      ]
+    }
+  ],
+  "recordings": [
+    {
+      "path": "evidence/recordings/release-final-1-chromium-desktop-playthrough.webm",
+      "bytes": 4887169,
+      "sha256": "e65337911c3ceedf1e941b01db303694b81af811addabb712820bfbdc6ce7336",
+      "transcode_evidence": "evidence/verification/recording-transcode.json"
+    },
+    {
+      "path": "evidence/recordings/release-final-1-chromium-mobile-touch-playthrough.webm",
+      "bytes": 621820,
+      "sha256": "8086b8fc360a0dd85acc0b8a927daae8236c6b9bb969796af856d7c1fe7296f8"
+    }
+  ],
+  "visual_review": "evidence/verification/visual-review.md",
+  "limits": [
+    "Physical mobile/Safari and GPU performance unverified",
+    "Native browser-chrome 200% zoom unverified; its layout footprint tested",
+    "No screen-reader conformance, audible mix or learner-preference study",
+    "Local records only; no authenticated teacher host",
+    "Actual Autopilot instrumentation with deterministic local driver; no Aura/Jev inference",
+    "Earlier truncated bridge trace excluded; both selected streams fully decoded and request/response matched"
+  ]
+}

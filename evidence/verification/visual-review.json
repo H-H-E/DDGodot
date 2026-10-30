@@ -1,0 +1,265 @@
+{
+  "reviewed_at_utc": "2026-10-30T20:52:59.367178+00:00",
+  "report": "evidence/verification/browser-release-1.json",
+  "build_id": "a9f5adc38198c5eb",
+  "source_sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+  "runtime_sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+  "reviewed_images": [
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-01-menu.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "2744e44d2fed2e2096e987433e2043837c6ef22ea23679b2969091f9d95416bd",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-02-modes.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "98a82c93b8e0bc175ba60af1ded5e39a27b854cf8e116e5d96799e114738f3f7",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-03-setup.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "9d7f8e6ab2d0d519c38c0a5d60782f93a365fb648576fbc2e0cd1b9f25ba3568",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-04-playing.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "7985b54658d637800e9d8387fdbb019b7a62740179fcec4e880f87f24fa79c9d",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-05-results.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "fa9260eda0b5b49cbaf99e48a96ebb693d1740e2a4a98bd0733c8cd967e3a0ef",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-06-wrong-answer.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "83fac399660b2cfa31e23a7a937724ebaeafced497a70310c01d00a9e3a08777",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-07-hint.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "d0e65cc605560fcd3e536ccdafa6cdf4b8bb5a50af4a6160935e8eb6577e356c",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-08-paused.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "be24b25f0f0c0eebdf5dab64eb86b7f1f73cf0b4973f2c2446c1d08c1e1f48bb",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-08-browser-help-paused.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "abc9271c1b94386999222aa9728d6e7604daa0a97a831f94d005c32264fe3c6e",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-09-timeout.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "75a53466cc2f1324a9ae3ef6cf9eafd703260235fe64f18548bf71b405e3abe6",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-10-resume-menu.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "7b3622e27ebc1097fb7121faae95600e548150789dc8b7a208252da40b30b040",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-11-progress.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "4a7dd60d75c05f495488afc0ed894a2c374254082e3657a4dbb3c7ba2b62c174",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-12-settings.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "ff6d6d41a06e74019504583ff14525d7137a35432e2c88befc01f7b463faf747",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-13-short-menu.png",
+      "pixel_dimensions": [
+        960,
+        420
+      ],
+      "sha256": "f2e498a30bc133fa627b43af48b27b1a9efc54258989ab3961bd843b446b913c",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-14-zoom-equivalent-game.png",
+      "pixel_dimensions": [
+        720,
+        450
+      ],
+      "sha256": "4dd69238dcf98a98751ab02ef4d24e51e94b2c6012c6d2fa86deea25d34b4b32",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-15-short-paused.png",
+      "pixel_dimensions": [
+        720,
+        450
+      ],
+      "sha256": "cf0f24e343ce3067be0addb4d61fb0f1551942f075917b7fad0ef2991d58892d",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-16-mobile-menu.png",
+      "pixel_dimensions": [
+        780,
+        1688
+      ],
+      "sha256": "1be66ec4eb0ed3f2f465dca7255aa6ac6ceee923db654a69019a5a6856a33b84",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-17-mobile-playing.png",
+      "pixel_dimensions": [
+        780,
+        1688
+      ],
+      "sha256": "4ee833856897fa0619fcd795c50f7e394fd70d86384ddd67a3f0eb2da7a2c28b",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-18-mobile-results.png",
+      "pixel_dimensions": [
+        780,
+        1688
+      ],
+      "sha256": "86b5caa308003672da28cdb943f863159c50faff468759ce79eebe31b6fd9ea1",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-19-offline-play.png",
+      "pixel_dimensions": [
+        1280,
+        800
+      ],
+      "sha256": "83e9b8e0b0a7528d91830cf680fe10494273d725f6f21cb8bfb4138fb698b435",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-20-storage-unavailable-results.png",
+      "pixel_dimensions": [
+        1280,
+        800
+      ],
+      "sha256": "40e45b5d537f0bc3dd5dfd699ba951d0ed23bbd1510e8357c018f10d184f968f",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-results-long-session-export.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "14479e1eed8e00f83596cba62f6c43af644da576b6629f02c0b5bb21b4b9cda6",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-results-cadence-division.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "d5822133f066fdf3b5fce432df4685bc9730531f61d58e0fc1ddff7c89ec36b6",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-chromium-results-practice-division.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "cf71e09ae38bd3b93b719a3fb7014a8e2f99038926b30d42eb81863596001b5f",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-firefox-04-playing.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "855efeb49e947b6e9d61d39bee4a0a66a232c0d580ed65e863044aeb70ac9824",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-firefox-05-results.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "a2333aef79a9778feff6de9459ea08d4659f942905790a0cbcaafb55ed43ab15",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-webkit-04-playing.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "b50cf1c20feb8d5e0939cda492a7ac54ce2adfbdd36cfa7bb74467a6640ef006",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    },
+    {
+      "path": "evidence/screenshots/release-final-1-webkit-05-results.png",
+      "pixel_dimensions": [
+        1440,
+        900
+      ],
+      "sha256": "c39299807a2e1a915821751c509748b9d33cb1ec0e58683c96d2e3103596d55a",
+      "inspection": "Rendered image visually inspected; no blocking clipping or overlapping text in this captured state."
+    }
+  ],
+  "image_count": 28,
+  "scope": "Visual inspection of captured frames; not an accessibility certification, hardware benchmark, audio review or learner study.",
+  "original_report_path": "evidence/runs/browser-release-final-1.json",
+  "report_sha256": "46e95f559cd302d3a5c15c4029b8da0bb431ed2f935d4dd57c16174cfd45c879"
+}

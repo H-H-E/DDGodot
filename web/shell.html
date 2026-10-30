@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0a1226">
+  <meta name="description" content="Find your flow. A free, offline-ready arithmetic runner made with Godot.">
+  <title>Diagnostic Dash — Find your flow</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:#0a1226;color:#edf3ed;font:16px system-ui,sans-serif}body{overflow:hidden}#canvas{display:block;width:100%;height:100%;outline:none;touch-action:none}#loading{position:fixed;inset:0;background:#0a1226;display:grid;place-content:center;text-align:center;gap:20px;padding:32px;z-index:10}h1{font-size:clamp(32px,6vw,64px);line-height:1.05;margin:0;letter-spacing:-.035em}h1 span{color:#d5ed81}p{max-width:540px;line-height:1.5;color:#a8b9cd;margin:0}progress{accent-color:#d5ed81;width:100%;height:8px;border:0}#failure{display:none;border:1px solid #d7ae7f;padding:20px;color:#ffcf9b;white-space:pre-wrap}#help{position:fixed;bottom:0;left:0;z-index:12;background:#16243d;padding:10px;transform:translateY(110%)}#help:focus-within{transform:none}button,a{color:inherit}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button{background:#16243d;border:1px solid #72e4cc;border-radius:6px;padding:10px 16px;font:inherit}#help-dialog{background:#101e37;color:#edf3ed;border:1px solid #72e4cc;border-radius:12px;max-width:560px;padding:28px}#help-dialog::backdrop{background:#030a18cc}
+  </style>
+  $GODOT_HEAD_INCLUDE
+</head>
+<body>
+  <canvas id="canvas" tabindex="0" role="application" aria-label="Diagnostic Dash arithmetic runner. Numbers to enter an answer, Enter to submit, Space to jump, Escape to pause. Tab moves between controls." aria-describedby="instructions"></canvas>
+  <p id="instructions" class="sr-only">Choose Play, a mode, and Start run. Practice has no timer. Type an answer and press Enter. H gives a hint. Escape pauses. Touch players can use the on-screen number pad. All records stay on this device.</p>
+  <div id="announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="loading"><p>DIAGNOSTIC / DASH</p><h1>Find your <span>flow.</span></h1><p id="load-text">Preparing your track…</p><progress id="load-progress" aria-label="Game loading"></progress><p id="failure" role="alert"></p></div>
+  <div id="help"><button id="help-button" type="button">Keyboard instructions</button></div>
+  <dialog id="help-dialog"><h2>Make it your run.</h2><p>Tab / Shift+Tab: move between controls.<br>Enter: activate a focused button or submit an answer.<br>0–9: enter your answer. Backspace: erase.<br>Space / ↑: jump. H: hint. Escape / P: pause.<br><br>Practice waits for you. Timed modes let you retry after a timeout. Use Settings for auto-jump, reduced motion, volume, and a separate local player slot.</p><br><button id="close-help">Back to game</button></dialog>
+  <noscript>This game needs JavaScript and a browser supporting WebAssembly and WebGL 2.</noscript>
+  <script src="$GODOT_URL"></script>
+  <script>
+    const GODOT_CONFIG=$GODOT_CONFIG;
+    const engine=new Engine(GODOT_CONFIG);
+    let lastAnnouncement='';
+    window.ddAnnounce=s=>{const text=s.screen==='playing'?s.question+'. '+s.feedback:s.screen==='paused'?'Paused. Timer stopped.':s.screen==='results'?'Run complete. Review your results.':'';if(text&&text!==lastAnnouncement){document.getElementById('announcements').textContent=text;lastAnnouncement=text;}};
+    document.getElementById('help-button').onclick=()=>document.getElementById('help-dialog').showModal();
+    document.getElementById('close-help').onclick=()=>{document.getElementById('help-dialog').close();document.getElementById('canvas').focus();};
+    function fail(error){const box=document.getElementById('failure');box.style.display='block';box.textContent=String(error?.message||error);document.getElementById('load-text').textContent='The game could not start.';document.getElementById('load-progress').hidden=true;console.error(error);}
+    const missing=Engine.getMissingFeatures({threads:false});
+    if(missing.length){fail('Your browser is missing: '+missing.join(', ')+'. Try a recent browser with graphics acceleration enabled.');}
+    else{engine.startGame({onProgress:(current,total)=>{const p=document.getElementById('load-progress');if(total){p.max=total;p.value=current;}}}).then(()=>{document.getElementById('loading').remove();document.getElementById('canvas').focus();window.ddLoadedAt=performance.now();if('serviceWorker'in navigator&&!new URLSearchParams(location.search).has('qa'))navigator.serviceWorker.register('./offline-worker.js').catch(()=>{});}).catch(fail);}
+  </script>
+</body>
+</html>

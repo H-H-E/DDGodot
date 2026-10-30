@@ -1,0 +1,2 @@
+# The local driver uses only a loopback WebSocket server. No model SDKs or keys.
+websockets==16.0

@@ -1,0 +1,3090 @@
+{
+  "runner": "DDGodot deterministic local driver using upstream Autopilot instrumentation",
+  "not_a_model_inference_run": true,
+  "paid_services_used": [],
+  "upstream_commit": "1818cc337b20762cd50102bc774a8e45eb7c4dc7",
+  "scenario": "goals",
+  "seed": 73,
+  "elapsed_seconds": 48.393,
+  "source_hashes": {
+    "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+    "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+    "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+    "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+    "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+    "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+    "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+    "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+    "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+    "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+    "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+    "tools/autopilot_bootstrap.gd": "d4d38a534c24f0f637cdc9bbcab131ce528a013b0be42cb1b022b79031d1649f",
+    "tools/autopilot_local.py": "cad2d60f5b5a26e905d2d3f036f7743b64182bcd69fc05e205d803283cd94a3a"
+  },
+  "source_unchanged_during_run": true,
+  "passed": 69,
+  "total": 69,
+  "checks": [
+    {
+      "name": "actual upstream addon, pinned revision, unchanged files",
+      "passed": true,
+      "detail": {
+        "commit": "1818cc337b20762cd50102bc774a8e45eb7c4dc7",
+        "files": 65,
+        "changed": []
+      }
+    },
+    {
+      "name": "actual Godot addon handshake",
+      "passed": true,
+      "detail": {
+        "engine": "godot",
+        "engine_version": "4.7.2-stable (official)",
+        "features": [
+          "timed_hold"
+        ],
+        "host": "game",
+        "plugin_version": "1.0.0",
+        "project": "Diagnostic Dash",
+        "protocol": 1,
+        "share": false,
+        "type": "hello"
+      }
+    },
+    {
+      "name": "upstream data sharing explicitly disabled",
+      "passed": true
+    },
+    {
+      "name": "Godot 4.7 runtime",
+      "passed": true,
+      "detail": "4.7.2-stable (official)"
+    },
+    {
+      "name": "real main scene available through instrumentation",
+      "passed": true,
+      "detail": {
+        "camera": "",
+        "camera_manager": "",
+        "character": "",
+        "controller": "",
+        "controls": 0,
+        "dimension": "ui",
+        "engine": "godot",
+        "game_name": "Diagnostic Dash",
+        "game_time": 0.18,
+        "host": "game",
+        "input_subsystem": "",
+        "paused": false,
+        "project_dir": "/workspace/scratch/c824ba403aa3/DDGodot/",
+        "scene": "res://scenes/main.tscn",
+        "session_running": true,
+        "world": "/root/Main"
+      }
+    },
+    {
+      "name": "upstream screen reader sees actual game UI",
+      "passed": true,
+      "detail": {
+        "texts": {
+          "Main.Brand": "DIAGNOSTIC / DASH",
+          "Main.Eyebrow": "A LITTLE MATHS. A LOT OF MOMENTUM.",
+          "Main.LocalNote": "Player 1 \u00b7 Saved on this device \u00b7 No account needed",
+          "Main.Play": "Let's play  \u2192",
+          "Main.Progress": "Your progress",
+          "Main.Settings": "Settings",
+          "Main.SideNote": "YOUR PACE. YOUR PATH.",
+          "Main.Sound": "Sound",
+          "Main.Subtitle": "Think it through. Open the gate.\nMake your next run your own.",
+          "Main.Title": "Find your\nflow."
+        }
+      }
+    },
+    {
+      "name": "upstream UI enumeration sees actual controls",
+      "passed": true,
+      "detail": [
+        "Main.Sound",
+        "Main.Play",
+        "Main.Progress",
+        "Main.Settings"
+      ]
+    },
+    {
+      "name": "runtime clock advances while running",
+      "passed": true,
+      "detail": {
+        "before": 0.23,
+        "after": 0.4
+      }
+    },
+    {
+      "name": "native pause freezes upstream active game clock",
+      "passed": true,
+      "detail": {
+        "before": 0.42,
+        "after": 0.42
+      }
+    },
+    {
+      "name": "invalid protocol operation fails visibly",
+      "passed": true
+    },
+    {
+      "name": "headless capture reports no picture",
+      "passed": true
+    },
+    {
+      "name": "game exposes a read-only test snapshot",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 4,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1180.0,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 771.185638427734,
+          "recovery": 0.0,
+          "rng_state": "3779529178551085788",
+          "scroll": 0.0,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.0,
+        "gate_remaining": 14.0,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Eyebrow": {
+            "h": 28.0,
+            "text": "A LITTLE MATHS. A LOT OF MOMENTUM.",
+            "visible": true,
+            "w": 640.0,
+            "x": 68.0,
+            "y": 86.0
+          },
+          "LocalNote": {
+            "h": 28.0,
+            "text": "Player 1 \u00b7 Saved on this device \u00b7 No account needed",
+            "visible": true,
+            "w": 1192.0,
+            "x": 44.0,
+            "y": 766.0
+          },
+          "SideNote": {
+            "h": 28.0,
+            "text": "YOUR PACE. YOUR PATH.",
+            "visible": true,
+            "w": 511.999938964844,
+            "x": 707.200012207031,
+            "y": 548.0
+          },
+          "Subtitle": {
+            "h": 64.0,
+            "text": "Think it through. Open the gate.\nMake your next run your own.",
+            "visible": true,
+            "w": 640.0,
+            "x": 68.0,
+            "y": 324.0
+          },
+          "Title": {
+            "h": 171.0,
+            "text": "Find your\nflow.",
+            "visible": true,
+            "w": 640.0,
+            "x": 68.0,
+            "y": 124.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "practice",
+        "operation": "addition",
+        "paused": false,
+        "question": {},
+        "question_elapsed": 0.0,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "menu",
+        "seed": 73,
+        "session_id": "",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 0,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 12,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "practice/addition: starts from real menu controls",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1173.28571428571,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 782.345879690988,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 6.71428571428571,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.083274,
+        "gate_remaining": 13.916726,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Type your answer, then press Enter.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 No timer",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "4 + 7 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "PRACTICE",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "practice",
+        "operation": "addition",
+        "paused": false,
+        "question": {
+          "a": 4,
+          "answer": 11,
+          "b": 7,
+          "key": "4+7",
+          "opType": "addition",
+          "symbol": "+"
+        },
+        "question_elapsed": 0.083274,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393079216-4263281046",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "practice/addition: configured seed is used",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "practice/addition: playable nonempty session target",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "practice/addition: pause excludes answer input and active time",
+      "passed": true,
+      "detail": {
+        "before": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.118089,
+          "gate_remaining": 13.881911,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "4 + 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "addition",
+          "paused": true,
+          "question": {
+            "a": 4,
+            "answer": 11,
+            "b": 7,
+            "key": "4+7",
+            "opType": "addition",
+            "symbol": "+"
+          },
+          "question_elapsed": 0.118089,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393079216-4263281046",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        },
+        "during": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.118089,
+          "gate_remaining": 13.881911,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "4 + 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "addition",
+          "paused": true,
+          "question": {
+            "a": 4,
+            "answer": 11,
+            "b": 7,
+            "key": "4+7",
+            "opType": "addition",
+            "symbol": "+"
+          },
+          "question_elapsed": 0.118089,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393079216-4263281046",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        }
+      }
+    },
+    {
+      "name": "manual jump responds to real keyboard input",
+      "passed": true,
+      "detail": {
+        "cleared": false,
+        "collisions": 0,
+        "gate_x": 1153.14285714286,
+        "jump_buffer": 0.0,
+        "jumps": 1,
+        "obstacle_active": true,
+        "obstacle_kind": 2,
+        "obstacle_x": 762.203022548131,
+        "recovery": 0.0,
+        "rng_state": "-408121506546887723",
+        "scroll": 26.8571428571429,
+        "velocity": -430.0,
+        "waiting": false,
+        "y": 209.833333333333
+      }
+    },
+    {
+      "name": "practice: wrong answer does not clear gate",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1120.69047619047,
+          "jump_buffer": 0.0,
+          "jumps": 1,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 729.750641595751,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 59.3095238095239,
+          "velocity": 367.5,
+          "waiting": false,
+          "y": 201.375
+        },
+        "elapsed": 0.852078,
+        "gate_remaining": 13.147922,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "One away. Take another look.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 No timer",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "4 + 7 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "PRACTICE",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "practice",
+        "operation": "addition",
+        "paused": false,
+        "question": {
+          "a": 4,
+          "answer": 11,
+          "b": 7,
+          "key": "4+7",
+          "opType": "addition",
+          "symbol": "+"
+        },
+        "question_elapsed": 0.852078,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393079216-4263281046",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 1,
+          "eventual_correct": 0,
+          "facts": 1,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 1,
+          "mean_response_seconds": 0.701309,
+          "questions_presented": 1,
+          "response_samples": 1,
+          "retries": 0,
+          "submitted_answers": 1,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "practice: hint preserves question",
+      "passed": true
+    },
+    {
+      "name": "practice/addition: rapid repeat submit cannot count the same gate twice",
+      "passed": true
+    },
+    {
+      "name": "practice/addition: full goal reached by typed answers",
+      "passed": true,
+      "detail": {
+        "completed": 6,
+        "target": 6,
+        "typed_correct_answers": 6,
+        "stats": {
+          "accuracy": 0.833333333333333,
+          "assisted": 1,
+          "attempts": 7,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 5,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.384686166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 1,
+          "submitted_answers": 7,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/addition: first-attempt evidence stays distinct from eventual success",
+      "passed": true,
+      "detail": {
+        "accuracy": 0.833333333333333,
+        "assisted": 1,
+        "attempts": 7,
+        "eventual_correct": 6,
+        "facts": 6,
+        "first_try_correct": 5,
+        "first_try_metric_version": 1,
+        "first_try_opportunities": 6,
+        "mean_response_seconds": 0.384686166666667,
+        "questions_presented": 6,
+        "response_samples": 6,
+        "retries": 1,
+        "submitted_answers": 7,
+        "timeouts": 0
+      }
+    },
+    {
+      "name": "practice/addition: results retain measured active time",
+      "passed": true,
+      "detail": {
+        "elapsed": 7.770428,
+        "stats": {
+          "accuracy": 0.833333333333333,
+          "assisted": 1,
+          "attempts": 7,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 5,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.384686166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 1,
+          "submitted_answers": 7,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/addition: session evidence saved successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "practice/addition: results return to menu",
+      "passed": true
+    },
+    {
+      "name": "classic/subtraction: starts from real menu controls",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1166.57142857143,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 775.631593976702,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 13.4285714285714,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.081044,
+        "gate_remaining": 6.918956,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Type your answer, then press Enter.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 7s",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "11 - 4 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "CLASSIC",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "classic",
+        "operation": "subtraction",
+        "paused": false,
+        "question": {
+          "a": 11,
+          "answer": 7,
+          "b": 4,
+          "key": "11-4",
+          "opType": "subtraction",
+          "symbol": "-"
+        },
+        "question_elapsed": 0.081044,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393088216-2445605998",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "classic/subtraction: configured seed is used",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "classic/subtraction: playable nonempty session target",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "classic/subtraction: pause excludes answer input and active time",
+      "passed": true,
+      "detail": {
+        "before": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1162.09523809524,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 771.155403500512,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 17.9047619047619,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.116039,
+          "gate_remaining": 6.883961,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 7s",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "11 - 4 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "CLASSIC",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "classic",
+          "operation": "subtraction",
+          "paused": true,
+          "question": {
+            "a": 11,
+            "answer": 7,
+            "b": 4,
+            "key": "11-4",
+            "opType": "subtraction",
+            "symbol": "-"
+          },
+          "question_elapsed": 0.116039,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393088216-2445605998",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        },
+        "during": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1162.09523809524,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 771.155403500512,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 17.9047619047619,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.116039,
+          "gate_remaining": 6.883961,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 7s",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "11 - 4 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "CLASSIC",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "classic",
+          "operation": "subtraction",
+          "paused": true,
+          "question": {
+            "a": 11,
+            "answer": 7,
+            "b": 4,
+            "key": "11-4",
+            "opType": "subtraction",
+            "symbol": "-"
+          },
+          "question_elapsed": 0.116039,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393088216-2445605998",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        }
+      }
+    },
+    {
+      "name": "classic: real deadline records timeout without auto-completing gate",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 235.523809523825,
+          "jump_buffer": 0.0,
+          "jumps": 1,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": -155.416025070911,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 944.476190476181,
+          "velocity": 0.0,
+          "waiting": true,
+          "y": 280.0
+        },
+        "elapsed": 7.014777,
+        "gate_remaining": 0.0,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Time for a reset. Think: 4 + ? = 11. Count up from 4 to 11: 7.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 37.0,
+            "text": "0 / 6 gates \u00b7 Take your time",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "11 - 4 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "CLASSIC",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "classic",
+        "operation": "subtraction",
+        "paused": false,
+        "question": {
+          "a": 11,
+          "answer": 7,
+          "b": 4,
+          "key": "11-4",
+          "opType": "subtraction",
+          "symbol": "-"
+        },
+        "question_elapsed": 7.014777,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393088216-2445605998",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 1,
+          "eventual_correct": 0,
+          "facts": 1,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 1,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 1
+        },
+        "target": 6,
+        "timed_out": true,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "classic/subtraction: rapid repeat submit cannot count the same gate twice",
+      "passed": true
+    },
+    {
+      "name": "classic/subtraction: full goal reached by typed answers",
+      "passed": true,
+      "detail": {
+        "completed": 6,
+        "target": 6,
+        "typed_correct_answers": 6,
+        "stats": {
+          "accuracy": 0.833333333333333,
+          "assisted": 1,
+          "attempts": 7,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 5,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.223284166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 1,
+          "submitted_answers": 6,
+          "timeouts": 1
+        }
+      }
+    },
+    {
+      "name": "classic/subtraction: first-attempt evidence stays distinct from eventual success",
+      "passed": true,
+      "detail": {
+        "accuracy": 0.833333333333333,
+        "assisted": 1,
+        "attempts": 7,
+        "eventual_correct": 6,
+        "facts": 6,
+        "first_try_correct": 5,
+        "first_try_metric_version": 1,
+        "first_try_opportunities": 6,
+        "mean_response_seconds": 0.223284166666667,
+        "questions_presented": 6,
+        "response_samples": 6,
+        "retries": 1,
+        "submitted_answers": 6,
+        "timeouts": 1
+      }
+    },
+    {
+      "name": "classic/subtraction: results retain measured active time",
+      "passed": true,
+      "detail": {
+        "elapsed": 13.183119,
+        "stats": {
+          "accuracy": 0.833333333333333,
+          "assisted": 1,
+          "attempts": 7,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 5,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.223284166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 1,
+          "submitted_answers": 6,
+          "timeouts": 1
+        }
+      }
+    },
+    {
+      "name": "classic/subtraction: session evidence saved successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classic/subtraction: results return to menu",
+      "passed": true
+    },
+    {
+      "name": "cadence/multiplication: starts from real menu controls",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1173.28571428571,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 782.345879690988,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 6.71428571428571,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.08402,
+        "gate_remaining": 13.91598,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Type your answer, then press Enter.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 14s",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "4 \u00d7 7 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "CADENCE",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "cadence",
+        "operation": "multiplication",
+        "paused": false,
+        "question": {
+          "a": 4,
+          "answer": 28,
+          "b": 7,
+          "key": "4\u00d77",
+          "opType": "multiplication",
+          "symbol": "\u00d7"
+        },
+        "question_elapsed": 0.08402,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393102649-3868004815",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "cadence/multiplication: configured seed is used",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "cadence/multiplication: playable nonempty session target",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "cadence/multiplication: pause excludes answer input and active time",
+      "passed": true,
+      "detail": {
+        "before": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.116302,
+          "gate_remaining": 13.883698,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 14s",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "4 \u00d7 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "CADENCE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "cadence",
+          "operation": "multiplication",
+          "paused": true,
+          "question": {
+            "a": 4,
+            "answer": 28,
+            "b": 7,
+            "key": "4\u00d77",
+            "opType": "multiplication",
+            "symbol": "\u00d7"
+          },
+          "question_elapsed": 0.116302,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393102649-3868004815",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        },
+        "during": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.116302,
+          "gate_remaining": 13.883698,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 14s",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "4 \u00d7 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "CADENCE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "cadence",
+          "operation": "multiplication",
+          "paused": true,
+          "question": {
+            "a": 4,
+            "answer": 28,
+            "b": 7,
+            "key": "4\u00d77",
+            "opType": "multiplication",
+            "symbol": "\u00d7"
+          },
+          "question_elapsed": 0.116302,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393102649-3868004815",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        }
+      }
+    },
+    {
+      "name": "cadence/multiplication: rapid repeat submit cannot count the same gate twice",
+      "passed": true
+    },
+    {
+      "name": "cadence/multiplication: full goal reached by typed answers",
+      "passed": true,
+      "detail": {
+        "completed": 6,
+        "target": 6,
+        "typed_correct_answers": 6,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.358291333333333,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "cadence/multiplication: first-attempt evidence stays distinct from eventual success",
+      "passed": true,
+      "detail": {
+        "accuracy": 1.0,
+        "assisted": 0,
+        "attempts": 6,
+        "eventual_correct": 6,
+        "facts": 6,
+        "first_try_correct": 6,
+        "first_try_metric_version": 1,
+        "first_try_opportunities": 6,
+        "mean_response_seconds": 0.358291333333333,
+        "questions_presented": 6,
+        "response_samples": 6,
+        "retries": 0,
+        "submitted_answers": 6,
+        "timeouts": 0
+      }
+    },
+    {
+      "name": "cadence/multiplication: results retain measured active time",
+      "passed": true,
+      "detail": {
+        "elapsed": 6.984466,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.358291333333333,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "cadence/multiplication: session evidence saved successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "cadence/multiplication: results return to menu",
+      "passed": true
+    },
+    {
+      "name": "practice/division: starts from real menu controls",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1173.28571428571,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 782.345879690988,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 6.71428571428571,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.082081,
+        "gate_remaining": 13.917919,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Type your answer, then press Enter.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 No timer",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "80 \u00f7 10 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "PRACTICE",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "practice",
+        "operation": "division",
+        "paused": false,
+        "question": {
+          "a": 80,
+          "answer": 8,
+          "b": 10,
+          "key": "80\u00f710",
+          "opType": "division",
+          "symbol": "\u00f7"
+        },
+        "question_elapsed": 0.082081,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393110806-768812310",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "practice/division: configured seed is used",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "practice/division: playable nonempty session target",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "practice/division: pause excludes answer input and active time",
+      "passed": true,
+      "detail": {
+        "before": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.115725,
+          "gate_remaining": 13.884275,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "80 \u00f7 10 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "division",
+          "paused": true,
+          "question": {
+            "a": 80,
+            "answer": 8,
+            "b": 10,
+            "key": "80\u00f710",
+            "opType": "division",
+            "symbol": "\u00f7"
+          },
+          "question_elapsed": 0.115725,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393110806-768812310",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        },
+        "during": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1171.04761904762,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 780.107784452893,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 8.95238095238095,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.115725,
+          "gate_remaining": 13.884275,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "80 \u00f7 10 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "division",
+          "paused": true,
+          "question": {
+            "a": 80,
+            "answer": 8,
+            "b": 10,
+            "key": "80\u00f710",
+            "opType": "division",
+            "symbol": "\u00f7"
+          },
+          "question_elapsed": 0.115725,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393110806-768812310",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        }
+      }
+    },
+    {
+      "name": "practice/division: rapid repeat submit cannot count the same gate twice",
+      "passed": true
+    },
+    {
+      "name": "practice/division: full goal reached by typed answers",
+      "passed": true,
+      "detail": {
+        "completed": 6,
+        "target": 6,
+        "typed_correct_answers": 6,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.2588865,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/division: first-attempt evidence stays distinct from eventual success",
+      "passed": true,
+      "detail": {
+        "accuracy": 1.0,
+        "assisted": 0,
+        "attempts": 6,
+        "eventual_correct": 6,
+        "facts": 6,
+        "first_try_correct": 6,
+        "first_try_metric_version": 1,
+        "first_try_opportunities": 6,
+        "mean_response_seconds": 0.2588865,
+        "questions_presented": 6,
+        "response_samples": 6,
+        "retries": 0,
+        "submitted_answers": 6,
+        "timeouts": 0
+      }
+    },
+    {
+      "name": "practice/division: results retain measured active time",
+      "passed": true,
+      "detail": {
+        "elapsed": 6.385991,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.2588865,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/division: session evidence saved successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "practice/division: results return to menu",
+      "passed": true
+    },
+    {
+      "name": "practice/mixed: starts from real menu controls",
+      "passed": true,
+      "detail": {
+        "audio_enabled": true,
+        "auto_jump": true,
+        "completed": 0,
+        "controls": 16,
+        "course": {
+          "cleared": false,
+          "collisions": 0,
+          "gate_x": 1172.16666666667,
+          "jump_buffer": 0.0,
+          "jumps": 0,
+          "obstacle_active": true,
+          "obstacle_kind": 2,
+          "obstacle_x": 781.22683207194,
+          "recovery": 0.0,
+          "rng_state": "-408121506546887723",
+          "scroll": 7.83333333333333,
+          "velocity": 0.0,
+          "waiting": false,
+          "y": 280.0
+        },
+        "elapsed": 0.093076,
+        "gate_remaining": 13.906924,
+        "gate_solved": false,
+        "input": "",
+        "labels": {
+          "Answer": {
+            "h": 47.0,
+            "text": "Your answer   _",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 470.0
+          },
+          "Brand": {
+            "h": 28.0,
+            "text": "DIAGNOSTIC / DASH",
+            "visible": true,
+            "w": 1150.0,
+            "x": 44.0,
+            "y": 18.0
+          },
+          "Feedback": {
+            "h": 58.0,
+            "text": "Type your answer, then press Enter.",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 523.0
+          },
+          "KeyboardNote": {
+            "h": 28.0,
+            "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+            "visible": true,
+            "w": 1204.0,
+            "x": 38.0,
+            "y": 690.0
+          },
+          "ProgressText": {
+            "h": 28.0,
+            "text": "0 / 6 gates \u00b7 No timer",
+            "visible": true,
+            "w": 180.0,
+            "x": 1062.0,
+            "y": 64.0
+          },
+          "Question": {
+            "h": 62.0,
+            "text": "3 \u00d7 7 = ?",
+            "visible": true,
+            "w": 698.359985351562,
+            "x": 44.0,
+            "y": 404.0
+          },
+          "RunMode": {
+            "h": 26.0,
+            "text": "PRACTICE",
+            "visible": true,
+            "w": 602.0,
+            "x": 38.0,
+            "y": 66.0
+          }
+        },
+        "learner_id": "player-1",
+        "mode": "practice",
+        "operation": "mixed",
+        "paused": false,
+        "question": {
+          "a": 3,
+          "answer": 21,
+          "b": 7,
+          "key": "3\u00d77",
+          "opType": "multiplication",
+          "symbol": "\u00d7"
+        },
+        "question_elapsed": 0.093076,
+        "range": 10,
+        "reduced_motion": false,
+        "save_error": "",
+        "screen": "playing",
+        "seed": 73,
+        "session_id": "player-1-1793393118353-817956450",
+        "stats": {
+          "accuracy": 0.0,
+          "assisted": 0,
+          "attempts": 0,
+          "eventual_correct": 0,
+          "facts": 0,
+          "first_try_correct": 0,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 0,
+          "mean_response_seconds": 0.0,
+          "questions_presented": 1,
+          "response_samples": 0,
+          "retries": 0,
+          "submitted_answers": 0,
+          "timeouts": 0
+        },
+        "target": 6,
+        "timed_out": false,
+        "viewport": {
+          "h": 800.0,
+          "w": 1280.0
+        }
+      }
+    },
+    {
+      "name": "practice/mixed: configured seed is used",
+      "passed": true,
+      "detail": 73
+    },
+    {
+      "name": "practice/mixed: playable nonempty session target",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "practice/mixed: pause excludes answer input and active time",
+      "passed": true,
+      "detail": {
+        "before": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1169.92857142857,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 778.988736833845,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 10.0714285714286,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.128671,
+          "gate_remaining": 13.871329,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "3 \u00d7 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "mixed",
+          "paused": true,
+          "question": {
+            "a": 3,
+            "answer": 21,
+            "b": 7,
+            "key": "3\u00d77",
+            "opType": "multiplication",
+            "symbol": "\u00d7"
+          },
+          "question_elapsed": 0.128671,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393118353-817956450",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        },
+        "during": {
+          "audio_enabled": true,
+          "auto_jump": true,
+          "completed": 0,
+          "controls": 19,
+          "course": {
+            "cleared": false,
+            "collisions": 0,
+            "gate_x": 1169.92857142857,
+            "jump_buffer": 0.0,
+            "jumps": 0,
+            "obstacle_active": true,
+            "obstacle_kind": 2,
+            "obstacle_x": 778.988736833845,
+            "recovery": 0.0,
+            "rng_state": "-408121506546887723",
+            "scroll": 10.0714285714286,
+            "velocity": 0.0,
+            "waiting": false,
+            "y": 280.0
+          },
+          "elapsed": 0.128671,
+          "gate_remaining": 13.871329,
+          "gate_solved": false,
+          "input": "",
+          "labels": {
+            "Answer": {
+              "h": 47.0,
+              "text": "Your answer   _",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 470.0
+            },
+            "Brand": {
+              "h": 28.0,
+              "text": "DIAGNOSTIC / DASH",
+              "visible": true,
+              "w": 1150.0,
+              "x": 44.0,
+              "y": 18.0
+            },
+            "Feedback": {
+              "h": 58.0,
+              "text": "Type your answer, then press Enter.",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 523.0
+            },
+            "KeyboardNote": {
+              "h": 28.0,
+              "text": "NUMBERS  answer     ENTER  submit     SPACE  jump     ESC  pause",
+              "visible": true,
+              "w": 1204.0,
+              "x": 38.0,
+              "y": 690.0
+            },
+            "PauseNote": {
+              "h": 70.0,
+              "text": "Your timer is paused. Your answer is right where you left it.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 242.0
+            },
+            "PauseTitle": {
+              "h": 70.0,
+              "text": "Take a breath.",
+              "visible": true,
+              "w": 440.0,
+              "x": 420.0,
+              "y": 160.0
+            },
+            "ProgressText": {
+              "h": 28.0,
+              "text": "0 / 6 gates \u00b7 No timer",
+              "visible": true,
+              "w": 180.0,
+              "x": 1062.0,
+              "y": 64.0
+            },
+            "Question": {
+              "h": 62.0,
+              "text": "3 \u00d7 7 = ?",
+              "visible": true,
+              "w": 698.359985351562,
+              "x": 44.0,
+              "y": 404.0
+            },
+            "RunMode": {
+              "h": 26.0,
+              "text": "PRACTICE",
+              "visible": true,
+              "w": 602.0,
+              "x": 38.0,
+              "y": 66.0
+            }
+          },
+          "learner_id": "player-1",
+          "mode": "practice",
+          "operation": "mixed",
+          "paused": true,
+          "question": {
+            "a": 3,
+            "answer": 21,
+            "b": 7,
+            "key": "3\u00d77",
+            "opType": "multiplication",
+            "symbol": "\u00d7"
+          },
+          "question_elapsed": 0.128671,
+          "range": 10,
+          "reduced_motion": false,
+          "save_error": "",
+          "screen": "paused",
+          "seed": 73,
+          "session_id": "player-1-1793393118353-817956450",
+          "stats": {
+            "accuracy": 0.0,
+            "assisted": 0,
+            "attempts": 0,
+            "eventual_correct": 0,
+            "facts": 0,
+            "first_try_correct": 0,
+            "first_try_metric_version": 1,
+            "first_try_opportunities": 0,
+            "mean_response_seconds": 0.0,
+            "questions_presented": 1,
+            "response_samples": 0,
+            "retries": 0,
+            "submitted_answers": 0,
+            "timeouts": 0
+          },
+          "target": 6,
+          "timed_out": false,
+          "viewport": {
+            "h": 800.0,
+            "w": 1280.0
+          }
+        }
+      }
+    },
+    {
+      "name": "practice/mixed: rapid repeat submit cannot count the same gate twice",
+      "passed": true
+    },
+    {
+      "name": "practice/mixed: full goal reached by typed answers",
+      "passed": true,
+      "detail": {
+        "completed": 6,
+        "target": 6,
+        "typed_correct_answers": 6,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.361370166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/mixed: first-attempt evidence stays distinct from eventual success",
+      "passed": true,
+      "detail": {
+        "accuracy": 1.0,
+        "assisted": 0,
+        "attempts": 6,
+        "eventual_correct": 6,
+        "facts": 6,
+        "first_try_correct": 6,
+        "first_try_metric_version": 1,
+        "first_try_opportunities": 6,
+        "mean_response_seconds": 0.361370166666667,
+        "questions_presented": 6,
+        "response_samples": 6,
+        "retries": 0,
+        "submitted_answers": 6,
+        "timeouts": 0
+      }
+    },
+    {
+      "name": "practice/mixed: results retain measured active time",
+      "passed": true,
+      "detail": {
+        "elapsed": 6.983711,
+        "stats": {
+          "accuracy": 1.0,
+          "assisted": 0,
+          "attempts": 6,
+          "eventual_correct": 6,
+          "facts": 6,
+          "first_try_correct": 6,
+          "first_try_metric_version": 1,
+          "first_try_opportunities": 6,
+          "mean_response_seconds": 0.361370166666667,
+          "questions_presented": 6,
+          "response_samples": 6,
+          "retries": 0,
+          "submitted_answers": 6,
+          "timeouts": 0
+        }
+      }
+    },
+    {
+      "name": "practice/mixed: session evidence saved successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "practice/mixed: results return to menu",
+      "passed": true
+    },
+    {
+      "name": "no error findings from upstream runtime detectors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Godot output contains no engine or script errors",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "executed project source remains unchanged throughout run",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "error": null
+}

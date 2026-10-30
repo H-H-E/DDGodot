@@ -1,0 +1,45 @@
+{
+  "engine": "4.7.2.stable",
+  "threads": false,
+  "renderer": "Compatibility",
+  "runtime_presentation": "browser implicit swap; Emscripten offscreen backbuffer disabled",
+  "build_id": "a9f5adc38198c5eb",
+  "files": {
+    "index.apple-touch-icon.png": {
+      "bytes": 9909,
+      "sha256": "3b15501af011db8fe5a89f050149748554cc9dee55cac6b6e6a2a6fde4dce410"
+    },
+    "index.audio.position.worklet.js": {
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    "index.audio.worklet.js": {
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    "index.html": {
+      "bytes": 5191,
+      "sha256": "b58e79012ccc7257add96978fb0c37b5801fd3e1e0b5db6095a487856a488934"
+    },
+    "index.icon.png": {
+      "bytes": 4253,
+      "sha256": "691c08541ab7165455ee3304566aa31d7272dda3dc0e89cbc46ffa72fdcb9df5"
+    },
+    "index.js": {
+      "bytes": 279785,
+      "sha256": "837ee06223fef871a8c01d3dd8534f85b9fa1dce23005e53a6ad3d27482959d4"
+    },
+    "index.pck": {
+      "bytes": 515212,
+      "sha256": "56e851f131b261a1d5f118502df252d5157617150c073461a60aefa99c92c4b6"
+    },
+    "index.png": {
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    "index.wasm": {
+      "bytes": 39514754,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    }
+  }
+}

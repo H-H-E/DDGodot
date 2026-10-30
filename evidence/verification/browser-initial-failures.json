@@ -1,0 +1,1288 @@
+{
+  "run_id": "full-initial",
+  "started_at": "2026-10-30T20:13:54.881Z",
+  "base_url": "http://127.0.0.1:8060/",
+  "policy": "Real exported Godot game. Read-only observation and explicit configuration fixture; real user input for navigation and gameplay.",
+  "engines": [
+    {
+      "engine": "chromium",
+      "status": "failed",
+      "scenarios": [
+        {
+          "name": "first-launch-menu-and-keyboard-navigation",
+          "status": "passed",
+          "duration_ms": 10702,
+          "observations": {
+            "completed_gates": 6,
+            "keyboard_only": true,
+            "replay_started": true,
+            "seed": 3916
+          }
+        },
+        {
+          "name": "complete-practice-addition",
+          "status": "passed",
+          "duration_ms": 9217,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 14578,
+            "session_id": "player-1-1793391249763-718806425"
+          }
+        },
+        {
+          "name": "complete-practice-subtraction",
+          "status": "passed",
+          "duration_ms": 8210,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 23038,
+            "session_id": "player-1-1793391258223-500215497"
+          }
+        },
+        {
+          "name": "complete-practice-multiplication",
+          "status": "passed",
+          "duration_ms": 8304,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 31187,
+            "session_id": "player-1-1793391266372-3474500572"
+          }
+        },
+        {
+          "name": "complete-practice-division",
+          "status": "passed",
+          "duration_ms": 8939,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 39595,
+            "session_id": "player-1-1793391274780-975106726"
+          }
+        },
+        {
+          "name": "complete-practice-mixed",
+          "status": "passed",
+          "duration_ms": 8190,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 48227,
+            "session_id": "player-1-1793391283412-2792454380"
+          }
+        },
+        {
+          "name": "complete-classic-addition",
+          "status": "passed",
+          "duration_ms": 8025,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 56392,
+            "session_id": "player-1-1793391291577-4020666228"
+          }
+        },
+        {
+          "name": "complete-classic-subtraction",
+          "status": "passed",
+          "duration_ms": 8466,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 64586,
+            "session_id": "player-1-1793391299771-1271390116"
+          }
+        },
+        {
+          "name": "complete-classic-multiplication",
+          "status": "passed",
+          "duration_ms": 8207,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73153,
+            "session_id": "player-1-1793391308338-1988313997"
+          }
+        },
+        {
+          "name": "complete-classic-division",
+          "status": "passed",
+          "duration_ms": 8773,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 81176,
+            "session_id": "player-1-1793391316362-1782484243"
+          }
+        },
+        {
+          "name": "complete-classic-mixed",
+          "status": "passed",
+          "duration_ms": 8078,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 89888,
+            "session_id": "player-1-1793391325073-292630203"
+          }
+        },
+        {
+          "name": "complete-cadence-addition",
+          "status": "passed",
+          "duration_ms": 8973,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 98147,
+            "session_id": "player-1-1793391333332-1942688465"
+          }
+        },
+        {
+          "name": "complete-cadence-subtraction",
+          "status": "passed",
+          "duration_ms": 8829,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 7007,
+            "session_id": "player-1-1793391342192-3102857835"
+          }
+        },
+        {
+          "name": "complete-cadence-multiplication",
+          "status": "passed",
+          "duration_ms": 9236,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 15915,
+            "session_id": "player-1-1793391351100-9937317"
+          }
+        },
+        {
+          "name": "complete-cadence-division",
+          "status": "passed",
+          "duration_ms": 8818,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 25207,
+            "session_id": "player-1-1793391360392-3768690171"
+          }
+        },
+        {
+          "name": "complete-cadence-mixed",
+          "status": "passed",
+          "duration_ms": 9178,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 34040,
+            "session_id": "player-1-1793391369225-1181050050"
+          }
+        },
+        {
+          "name": "wrong-retry-hint-and-rapid-submission-evidence",
+          "status": "passed",
+          "duration_ms": 10822,
+          "observations": {
+            "result": {
+              "accuracy": 0.833333333333333,
+              "active_seconds": 8.862,
+              "assisted": 1,
+              "attempts": 8,
+              "collisions": 0,
+              "completed": 6,
+              "created_at": "2026-10-30T20:16:18",
+              "eventual_correct": 6,
+              "facts": [
+                {
+                  "assisted": true,
+                  "attempts": 3,
+                  "correct": true,
+                  "first_correct": false,
+                  "first_latency": 0.4286,
+                  "id": 1,
+                  "key": "1+5",
+                  "latencies": [
+                    0.4286,
+                    0.9868,
+                    1.3606
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 2,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.2,
+                  "id": 2,
+                  "key": "0+3",
+                  "latencies": [
+                    0.2
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1929,
+                  "id": 3,
+                  "key": "5+2",
+                  "latencies": [
+                    0.1929
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1942,
+                  "id": 4,
+                  "key": "1+5",
+                  "latencies": [
+                    0.1942
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.2795,
+                  "id": 5,
+                  "key": "4+0",
+                  "latencies": [
+                    0.2795
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.3325,
+                  "id": 6,
+                  "key": "5+4",
+                  "latencies": [
+                    0.3325
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                }
+              ],
+              "first_try_correct": 5,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 6,
+              "learner_id": "player-1",
+              "mean_response_seconds": 0.271283333333333,
+              "mode": "practice",
+              "operation": "addition",
+              "questions_presented": 6,
+              "range": 5,
+              "response_samples": 6,
+              "retries": 2,
+              "seed": 43187,
+              "session_id": "player-1-1793391378372-2201721926",
+              "submitted_answers": 8,
+              "target": 6,
+              "timeouts": 0
+            }
+          }
+        },
+        {
+          "name": "pause-freezes-clock-course-and-answer-input",
+          "status": "passed",
+          "duration_ms": 5967,
+          "observations": {
+            "pause_interval_ms": 1100,
+            "active_time_drift_seconds": 0,
+            "frozen_course": true
+          }
+        },
+        {
+          "name": "timed-out-gate-recovery-and-honest-response-time",
+          "status": "passed",
+          "duration_ms": 17360,
+          "observations": {
+            "timeout_duration": [
+              7.0129
+            ],
+            "recovery_interval": 1.8858
+          }
+        },
+        {
+          "name": "interrupted-save-reload-resume-and-completed-record",
+          "status": "failed",
+          "duration_ms": 14211,
+          "error": "Durably completed run must not reappear as interrupted",
+          "snapshot": {
+            "audio_enabled": true,
+            "auto_jump": true,
+            "completed": 0,
+            "controls": {
+              "DiscardSaved": {
+                "disabled": false,
+                "h": 44,
+                "text": "Discard saved run",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 480
+              },
+              "Progress": {
+                "disabled": false,
+                "h": 44,
+                "text": "Your progress",
+                "visible": true,
+                "w": 176,
+                "x": 68,
+                "y": 540
+              },
+              "ResumeSaved": {
+                "disabled": false,
+                "h": 58,
+                "text": "Resume saved run  →",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 412
+              },
+              "Settings": {
+                "disabled": false,
+                "h": 44,
+                "text": "Settings",
+                "visible": true,
+                "w": 150,
+                "x": 258,
+                "y": 540
+              },
+              "Sound": {
+                "disabled": false,
+                "h": 38,
+                "text": "Sound",
+                "visible": true,
+                "w": 74,
+                "x": 1322,
+                "y": 14
+              }
+            },
+            "course": {
+              "cleared": false,
+              "collisions": 0,
+              "gate_x": 1180,
+              "jump_buffer": 0,
+              "jumps": 0,
+              "obstacle_active": true,
+              "obstacle_kind": 2,
+              "obstacle_x": 771.185638427734,
+              "recovery": 0,
+              "rng_state": "3779529178551085788",
+              "scroll": 0,
+              "velocity": 0,
+              "waiting": false,
+              "y": 280
+            },
+            "elapsed": 0,
+            "gate_remaining": 14,
+            "gate_solved": false,
+            "input": "",
+            "learner_id": "player-1",
+            "mode": "practice",
+            "operation": "addition",
+            "paused": false,
+            "question": {},
+            "question_elapsed": 0,
+            "range": 10,
+            "reduced_motion": false,
+            "result": {},
+            "save_error": "",
+            "screen": "menu",
+            "seed": 73,
+            "session_id": "",
+            "stats": {
+              "accuracy": 0,
+              "assisted": 0,
+              "attempts": 0,
+              "eventual_correct": 0,
+              "facts": [],
+              "first_try_correct": 0,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 0,
+              "mean_response_seconds": 0,
+              "questions_presented": 0,
+              "response_samples": 0,
+              "retries": 0,
+              "submitted_answers": 0,
+              "timeouts": 0
+            },
+            "target": 12,
+            "timed_out": false,
+            "viewport": {
+              "h": 900,
+              "w": 1440
+            }
+          }
+        },
+        {
+          "name": "learner-separation-and-settings-persistence",
+          "status": "failed",
+          "duration_ms": 150,
+          "error": "Missing control Play on menu",
+          "snapshot": {
+            "audio_enabled": true,
+            "auto_jump": true,
+            "completed": 0,
+            "controls": {
+              "DiscardSaved": {
+                "disabled": false,
+                "h": 44,
+                "text": "Discard saved run",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 480
+              },
+              "Progress": {
+                "disabled": false,
+                "h": 44,
+                "text": "Your progress",
+                "visible": true,
+                "w": 176,
+                "x": 68,
+                "y": 540
+              },
+              "ResumeSaved": {
+                "disabled": false,
+                "h": 58,
+                "text": "Resume saved run  →",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 412
+              },
+              "Settings": {
+                "disabled": false,
+                "h": 44,
+                "text": "Settings",
+                "visible": true,
+                "w": 150,
+                "x": 258,
+                "y": 540
+              },
+              "Sound": {
+                "disabled": false,
+                "h": 38,
+                "text": "Sound",
+                "visible": true,
+                "w": 74,
+                "x": 1322,
+                "y": 14
+              }
+            },
+            "course": {
+              "cleared": false,
+              "collisions": 0,
+              "gate_x": 1180,
+              "jump_buffer": 0,
+              "jumps": 0,
+              "obstacle_active": true,
+              "obstacle_kind": 2,
+              "obstacle_x": 771.185638427734,
+              "recovery": 0,
+              "rng_state": "3779529178551085788",
+              "scroll": 0,
+              "velocity": 0,
+              "waiting": false,
+              "y": 280
+            },
+            "elapsed": 0,
+            "gate_remaining": 14,
+            "gate_solved": false,
+            "input": "",
+            "learner_id": "player-1",
+            "mode": "practice",
+            "operation": "addition",
+            "paused": false,
+            "question": {},
+            "question_elapsed": 0,
+            "range": 10,
+            "reduced_motion": false,
+            "result": {},
+            "save_error": "",
+            "screen": "menu",
+            "seed": 73,
+            "session_id": "",
+            "stats": {
+              "accuracy": 0,
+              "assisted": 0,
+              "attempts": 0,
+              "eventual_correct": 0,
+              "facts": [],
+              "first_try_correct": 0,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 0,
+              "mean_response_seconds": 0,
+              "questions_presented": 0,
+              "response_samples": 0,
+              "retries": 0,
+              "submitted_answers": 0,
+              "timeouts": 0
+            },
+            "target": 12,
+            "timed_out": false,
+            "viewport": {
+              "h": 900,
+              "w": 1440
+            }
+          }
+        },
+        {
+          "name": "short-viewport-scroll-and-zoom-equivalent-layout",
+          "status": "failed",
+          "duration_ms": 2222,
+          "error": "Missing control Play on menu",
+          "snapshot": {
+            "audio_enabled": true,
+            "auto_jump": true,
+            "completed": 0,
+            "controls": {
+              "DiscardSaved": {
+                "disabled": false,
+                "h": 44,
+                "text": "Discard saved run",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 480
+              },
+              "Progress": {
+                "disabled": false,
+                "h": 44,
+                "text": "Your progress",
+                "visible": true,
+                "w": 176,
+                "x": 68,
+                "y": 540
+              },
+              "ResumeSaved": {
+                "disabled": false,
+                "h": 58,
+                "text": "Resume saved run  →",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 412
+              },
+              "Settings": {
+                "disabled": false,
+                "h": 44,
+                "text": "Settings",
+                "visible": true,
+                "w": 144,
+                "x": 258,
+                "y": 540
+              },
+              "Sound": {
+                "disabled": false,
+                "h": 38,
+                "text": "Sound",
+                "visible": true,
+                "w": 74,
+                "x": 602,
+                "y": 14
+              }
+            },
+            "course": {
+              "cleared": false,
+              "collisions": 0,
+              "gate_x": 1180,
+              "jump_buffer": 0,
+              "jumps": 0,
+              "obstacle_active": true,
+              "obstacle_kind": 2,
+              "obstacle_x": 771.185638427734,
+              "recovery": 0,
+              "rng_state": "3779529178551085788",
+              "scroll": 0,
+              "velocity": 0,
+              "waiting": false,
+              "y": 280
+            },
+            "elapsed": 0,
+            "gate_remaining": 14,
+            "gate_solved": false,
+            "input": "",
+            "learner_id": "player-1",
+            "mode": "practice",
+            "operation": "addition",
+            "paused": false,
+            "question": {},
+            "question_elapsed": 0,
+            "range": 10,
+            "reduced_motion": false,
+            "result": {},
+            "save_error": "",
+            "screen": "menu",
+            "seed": 73,
+            "session_id": "",
+            "stats": {
+              "accuracy": 0,
+              "assisted": 0,
+              "attempts": 0,
+              "eventual_correct": 0,
+              "facts": [],
+              "first_try_correct": 0,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 0,
+              "mean_response_seconds": 0,
+              "questions_presented": 0,
+              "response_samples": 0,
+              "retries": 0,
+              "submitted_answers": 0,
+              "timeouts": 0
+            },
+            "target": 12,
+            "timed_out": false,
+            "viewport": {
+              "h": 450,
+              "w": 720
+            }
+          }
+        },
+        {
+          "name": "performance-sample-and-practice-remains-untimed",
+          "status": "failed",
+          "duration_ms": 16,
+          "error": "Missing control Play on menu",
+          "snapshot": {
+            "audio_enabled": true,
+            "auto_jump": true,
+            "completed": 0,
+            "controls": {
+              "DiscardSaved": {
+                "disabled": false,
+                "h": 44,
+                "text": "Discard saved run",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 480
+              },
+              "Progress": {
+                "disabled": false,
+                "h": 44,
+                "text": "Your progress",
+                "visible": true,
+                "w": 176,
+                "x": 68,
+                "y": 540
+              },
+              "ResumeSaved": {
+                "disabled": false,
+                "h": 58,
+                "text": "Resume saved run  →",
+                "visible": true,
+                "w": 350,
+                "x": 68,
+                "y": 412
+              },
+              "Settings": {
+                "disabled": false,
+                "h": 44,
+                "text": "Settings",
+                "visible": true,
+                "w": 144,
+                "x": 258,
+                "y": 540
+              },
+              "Sound": {
+                "disabled": false,
+                "h": 38,
+                "text": "Sound",
+                "visible": true,
+                "w": 74,
+                "x": 602,
+                "y": 14
+              }
+            },
+            "course": {
+              "cleared": false,
+              "collisions": 0,
+              "gate_x": 1180,
+              "jump_buffer": 0,
+              "jumps": 0,
+              "obstacle_active": true,
+              "obstacle_kind": 2,
+              "obstacle_x": 771.185638427734,
+              "recovery": 0,
+              "rng_state": "3779529178551085788",
+              "scroll": 0,
+              "velocity": 0,
+              "waiting": false,
+              "y": 280
+            },
+            "elapsed": 0,
+            "gate_remaining": 14,
+            "gate_solved": false,
+            "input": "",
+            "learner_id": "player-1",
+            "mode": "practice",
+            "operation": "addition",
+            "paused": false,
+            "question": {},
+            "question_elapsed": 0,
+            "range": 10,
+            "reduced_motion": false,
+            "result": {},
+            "save_error": "",
+            "screen": "menu",
+            "seed": 73,
+            "session_id": "",
+            "stats": {
+              "accuracy": 0,
+              "assisted": 0,
+              "attempts": 0,
+              "eventual_correct": 0,
+              "facts": [],
+              "first_try_correct": 0,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 0,
+              "mean_response_seconds": 0,
+              "questions_presented": 0,
+              "response_samples": 0,
+              "retries": 0,
+              "submitted_answers": 0,
+              "timeouts": 0
+            },
+            "target": 12,
+            "timed_out": false,
+            "viewport": {
+              "h": 450,
+              "w": 720
+            }
+          }
+        },
+        {
+          "name": "mobile-touch-only-complete-session",
+          "status": "passed",
+          "duration_ms": 13638,
+          "observations": {
+            "viewport": [
+              390,
+              844
+            ],
+            "device_scale_factor": 2,
+            "touch_only_navigation_and_answers": true,
+            "completed_gates": 6
+          }
+        },
+        {
+          "name": "production-qa-absence-and-offline-reload",
+          "status": "passed",
+          "duration_ms": 1881,
+          "observations": {
+            "qa_interface_absent": true,
+            "service_worker_controlled": true,
+            "offline_reload_and_answer": true,
+            "reconnect": true,
+            "expected_offline_network_failures": 0,
+            "logs": {
+              "console": [],
+              "page_errors": [],
+              "failed_requests": [],
+              "http_errors": []
+            }
+          }
+        },
+        {
+          "name": "browser-runtime-and-resource-errors",
+          "status": "passed"
+        }
+      ],
+      "screenshots": [
+        "evidence/screenshots/full-initial-chromium-01-menu.png",
+        "evidence/screenshots/full-initial-chromium-02-modes.png",
+        "evidence/screenshots/full-initial-chromium-03-setup.png",
+        "evidence/screenshots/full-initial-chromium-04-playing.png",
+        "evidence/screenshots/full-initial-chromium-05-results.png",
+        "evidence/screenshots/full-initial-chromium-results-practice-division.png",
+        "evidence/screenshots/full-initial-chromium-results-classic-division.png",
+        "evidence/screenshots/full-initial-chromium-results-cadence-addition.png",
+        "evidence/screenshots/full-initial-chromium-results-cadence-subtraction.png",
+        "evidence/screenshots/full-initial-chromium-results-cadence-multiplication.png",
+        "evidence/screenshots/full-initial-chromium-results-cadence-division.png",
+        "evidence/screenshots/full-initial-chromium-results-cadence-mixed.png",
+        "evidence/screenshots/full-initial-chromium-06-wrong-answer.png",
+        "evidence/screenshots/full-initial-chromium-07-hint.png",
+        "evidence/screenshots/full-initial-chromium-08-paused.png",
+        "evidence/screenshots/full-initial-chromium-09-timeout.png",
+        "evidence/screenshots/full-initial-chromium-10-resume-menu.png",
+        "evidence/screenshots/full-initial-chromium-FAIL-interrupted-save-reload-resume-and-completed-record.png",
+        "evidence/screenshots/full-initial-chromium-FAIL-learner-separation-and-settings-persistence.png",
+        "evidence/screenshots/full-initial-chromium-13-short-menu.png",
+        "evidence/screenshots/full-initial-chromium-FAIL-short-viewport-scroll-and-zoom-equivalent-layout.png",
+        "evidence/screenshots/full-initial-chromium-FAIL-performance-sample-and-practice-remains-untimed.png",
+        "evidence/screenshots/full-initial-chromium-16-mobile-menu.png",
+        "evidence/screenshots/full-initial-chromium-17-mobile-playing.png",
+        "evidence/screenshots/full-initial-chromium-18-mobile-results.png",
+        "evidence/screenshots/full-initial-chromium-19-offline-play.png"
+      ],
+      "logs": {
+        "console": [],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "browser_version": "141.0.7390.37",
+      "startup": {
+        "wall_startup_ms": 1434,
+        "engine_loaded_ms": 1140.0999999977648
+      }
+    },
+    {
+      "engine": "firefox",
+      "status": "unavailable",
+      "scenarios": [],
+      "screenshots": [],
+      "logs": {
+        "console": [
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "Your browser is missing: WebGL2 - Check web browser configuration and hardware support. Try a recent browser with graphics acceleration enabled."
+          },
+          {
+            "scenario": "startup",
+            "type": "warning",
+            "message": "[JavaScript Warning: \"Failed to create WebGL context: WebGL creation failed: \n* AllowWebgl2:false restricts context creation on this system. ()\" {file: \"http://127.0.0.1:8060/index.js\" line: 14}]"
+          }
+        ],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "browser_version": "142.0.1",
+      "reason": "Godot startup failure: Your browser is missing: WebGL2 - Check web browser configuration and hardware support. Try a recent browser with graphics acceleration enabled."
+    },
+    {
+      "engine": "webkit",
+      "status": "failed",
+      "scenarios": [
+        {
+          "name": "first-launch-menu-and-keyboard-navigation",
+          "status": "passed",
+          "duration_ms": 6443,
+          "observations": {
+            "completed_gates": 6,
+            "keyboard_only": true,
+            "replay_started": true,
+            "seed": 73
+          }
+        },
+        {
+          "name": "complete-classic-multiplication",
+          "status": "passed",
+          "duration_ms": 6891,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793391462957-728310245"
+          }
+        },
+        {
+          "name": "complete-cadence-division",
+          "status": "passed",
+          "duration_ms": 6728,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793391469443-3452974387"
+          }
+        },
+        {
+          "name": "wrong-retry-hint-and-rapid-submission-evidence",
+          "status": "passed",
+          "duration_ms": 7275,
+          "observations": {
+            "result": {
+              "accuracy": 0.833333333333333,
+              "active_seconds": 6.267,
+              "assisted": 1,
+              "attempts": 8,
+              "collisions": 0,
+              "completed": 6,
+              "created_at": "2026-10-30T20:17:56",
+              "eventual_correct": 6,
+              "facts": [
+                {
+                  "assisted": true,
+                  "attempts": 3,
+                  "correct": true,
+                  "first_correct": false,
+                  "first_latency": 0.29,
+                  "id": 1,
+                  "key": "5+4",
+                  "latencies": [
+                    0.29,
+                    0.257,
+                    0.362
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 2,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.076,
+                  "id": 2,
+                  "key": "2+1",
+                  "latencies": [
+                    0.076
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.081,
+                  "id": 3,
+                  "key": "5+4",
+                  "latencies": [
+                    0.081
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.093,
+                  "id": 4,
+                  "key": "1+4",
+                  "latencies": [
+                    0.093
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.121,
+                  "id": 5,
+                  "key": "0+5",
+                  "latencies": [
+                    0.121
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.131,
+                  "id": 6,
+                  "key": "0+4",
+                  "latencies": [
+                    0.131
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                }
+              ],
+              "first_try_correct": 5,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 6,
+              "learner_id": "player-1",
+              "mean_response_seconds": 0.132,
+              "mode": "practice",
+              "operation": "addition",
+              "questions_presented": 6,
+              "range": 5,
+              "response_samples": 6,
+              "retries": 2,
+              "seed": 73,
+              "session_id": "player-1-1793391476165-857946360",
+              "submitted_answers": 8,
+              "target": 6,
+              "timeouts": 0
+            }
+          }
+        },
+        {
+          "name": "pause-freezes-clock-course-and-answer-input",
+          "status": "passed",
+          "duration_ms": 3673,
+          "observations": {
+            "pause_interval_ms": 1100,
+            "active_time_drift_seconds": 0,
+            "frozen_course": true
+          }
+        },
+        {
+          "name": "browser-runtime-and-resource-errors",
+          "status": "failed",
+          "errors": [
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+            },
+            {
+              "scenario": "startup",
+              "type": "error",
+              "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image. (No more validation messages will be reported)"
+            }
+          ],
+          "page_errors": [],
+          "http_errors": []
+        }
+      ],
+      "screenshots": [
+        "evidence/screenshots/full-initial-webkit-01-menu.png",
+        "evidence/screenshots/full-initial-webkit-02-modes.png",
+        "evidence/screenshots/full-initial-webkit-03-setup.png",
+        "evidence/screenshots/full-initial-webkit-04-playing.png",
+        "evidence/screenshots/full-initial-webkit-05-results.png",
+        "evidence/screenshots/full-initial-webkit-results-cadence-division.png",
+        "evidence/screenshots/full-initial-webkit-06-wrong-answer.png",
+        "evidence/screenshots/full-initial-webkit-07-hint.png",
+        "evidence/screenshots/full-initial-webkit-08-paused.png"
+      ],
+      "logs": {
+        "console": [
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image."
+          },
+          {
+            "scenario": "startup",
+            "type": "error",
+            "message": "WebGL: INVALID_OPERATION: glBlitFramebuffer: Read and write color attachments cannot be the same image. (No more validation messages will be reported)"
+          }
+        ],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "browser_version": "26.0",
+      "startup": {
+        "wall_startup_ms": 5088,
+        "engine_loaded_ms": 3096
+      }
+    }
+  ],
+  "limitations": [
+    "Software-rendered cloud browser performance is not representative of a physical low-powered phone.",
+    "Sound preference and browser activation are exercised; audible sound quality is not automatically judged.",
+    "Corrupt-save injection and malformed checkpoint validation are covered by the native component suite, not fabricated as browser passes."
+  ],
+  "finished_at": "2026-10-30T20:18:06.246Z",
+  "status": "failed"
+}

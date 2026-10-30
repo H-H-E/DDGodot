@@ -1,0 +1,1173 @@
+{
+  "run_id": "release-final-2",
+  "started_at": "2026-10-30T20:51:08.067Z",
+  "base_url": "http://127.0.0.1:8060/",
+  "policy": "Real exported Godot game. Read-only observation and explicit configuration fixture; real user input for navigation and gameplay.",
+  "engines": [
+    {
+      "engine": "chromium",
+      "status": "passed",
+      "scenarios": [
+        {
+          "name": "first-launch-menu-and-keyboard-navigation",
+          "status": "passed",
+          "duration_ms": 9667,
+          "observations": {
+            "completed_gates": 6,
+            "keyboard_only": true,
+            "replay_started": true,
+            "seed": 73
+          }
+        },
+        {
+          "name": "complete-practice-addition",
+          "status": "passed",
+          "duration_ms": 6779,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393480521-3576622131"
+          }
+        },
+        {
+          "name": "complete-practice-subtraction",
+          "status": "passed",
+          "duration_ms": 6465,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393486994-3153097182"
+          }
+        },
+        {
+          "name": "complete-practice-multiplication",
+          "status": "passed",
+          "duration_ms": 6560,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393493481-2833399332"
+          }
+        },
+        {
+          "name": "complete-practice-division",
+          "status": "passed",
+          "duration_ms": 7020,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393500007-4051212511"
+          }
+        },
+        {
+          "name": "complete-practice-mixed",
+          "status": "passed",
+          "duration_ms": 6482,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393507013-1989803138"
+          }
+        },
+        {
+          "name": "complete-classic-addition",
+          "status": "passed",
+          "duration_ms": 6545,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393513514-2836066361"
+          }
+        },
+        {
+          "name": "complete-classic-subtraction",
+          "status": "passed",
+          "duration_ms": 6620,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393520061-1108566368"
+          }
+        },
+        {
+          "name": "complete-classic-multiplication",
+          "status": "passed",
+          "duration_ms": 6637,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393526671-2595459614"
+          }
+        },
+        {
+          "name": "complete-classic-division",
+          "status": "passed",
+          "duration_ms": 7120,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393533286-997162947"
+          }
+        },
+        {
+          "name": "complete-classic-mixed",
+          "status": "passed",
+          "duration_ms": 6453,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393540404-2089237190"
+          }
+        },
+        {
+          "name": "complete-cadence-addition",
+          "status": "passed",
+          "duration_ms": 7024,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393546873-3250304266"
+          }
+        },
+        {
+          "name": "complete-cadence-subtraction",
+          "status": "passed",
+          "duration_ms": 7204,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393553954-2841497632"
+          }
+        },
+        {
+          "name": "complete-cadence-multiplication",
+          "status": "passed",
+          "duration_ms": 7160,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393561113-1683720106"
+          }
+        },
+        {
+          "name": "complete-cadence-division",
+          "status": "passed",
+          "duration_ms": 7292,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393568287-1926628507"
+          }
+        },
+        {
+          "name": "complete-cadence-mixed",
+          "status": "passed",
+          "duration_ms": 7162,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393575587-1951008702"
+          }
+        },
+        {
+          "name": "wrong-retry-hint-and-rapid-submission-evidence",
+          "status": "passed",
+          "duration_ms": 8196,
+          "observations": {
+            "result": {
+              "accuracy": 0.833333333333333,
+              "active_seconds": 7.226,
+              "assisted": 1,
+              "attempts": 8,
+              "collisions": 0,
+              "completed": 6,
+              "created_at": "2026-10-30T20:53:02",
+              "eventual_correct": 6,
+              "facts": [
+                {
+                  "assisted": true,
+                  "attempts": 3,
+                  "correct": true,
+                  "first_correct": false,
+                  "first_latency": 0.2997,
+                  "id": 1,
+                  "key": "2+5",
+                  "latencies": [
+                    0.2997,
+                    0.6956,
+                    0.7911
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 2,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1342,
+                  "id": 2,
+                  "key": "1+5",
+                  "latencies": [
+                    0.1342
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.0845,
+                  "id": 3,
+                  "key": "2+5",
+                  "latencies": [
+                    0.0845
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1552,
+                  "id": 4,
+                  "key": "3+5",
+                  "latencies": [
+                    0.1552
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1017,
+                  "id": 5,
+                  "key": "1+0",
+                  "latencies": [
+                    0.1017
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.1023,
+                  "id": 6,
+                  "key": "2+0",
+                  "latencies": [
+                    0.1023
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                }
+              ],
+              "first_try_correct": 5,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 6,
+              "learner_id": "player-1",
+              "mean_response_seconds": 0.146266666666667,
+              "mode": "practice",
+              "operation": "addition",
+              "questions_presented": 6,
+              "range": 5,
+              "response_samples": 6,
+              "retries": 2,
+              "seed": 73,
+              "session_id": "player-1-1793393582701-911880700",
+              "submitted_answers": 8,
+              "target": 6,
+              "timeouts": 0
+            }
+          }
+        },
+        {
+          "name": "pause-freezes-clock-course-and-answer-input",
+          "status": "passed",
+          "duration_ms": 4049,
+          "observations": {
+            "pause_interval_ms": 1100,
+            "active_time_drift_seconds": 0,
+            "frozen_course": true
+          }
+        },
+        {
+          "name": "browser-help-dialog-pauses-active-game",
+          "status": "passed",
+          "duration_ms": 4158,
+          "observations": {
+            "focus_setup": "Explicit focus of the HTML help button",
+            "activation": "Real Enter key",
+            "help_interval_ms": 1200,
+            "active_time_drift_seconds": 0,
+            "explicit_resume": true
+          }
+        },
+        {
+          "name": "long-session-and-result-json-download",
+          "status": "passed",
+          "duration_ms": 24876,
+          "observations": {
+            "gates": 24,
+            "downloaded_filename": "diagnostic-dash-result.json",
+            "exported_session_id": "player-1-1793393599481-1194555887",
+            "actual_download": true
+          }
+        },
+        {
+          "name": "timed-out-gate-recovery-and-honest-response-time",
+          "status": "passed",
+          "duration_ms": 15272,
+          "observations": {
+            "timeout_duration": [
+              7.0274
+            ],
+            "recovery_interval": 1.6935
+          }
+        },
+        {
+          "name": "interrupted-save-reload-resume-and-completed-record",
+          "status": "passed",
+          "duration_ms": 11974,
+          "observations": {
+            "resumed_session_id": "player-1-1793393639260-579231263",
+            "typed_answer_restored_without_submission": true,
+            "completion_survives_reload": true
+          }
+        },
+        {
+          "name": "learner-separation-and-settings-persistence",
+          "status": "passed",
+          "duration_ms": 6978,
+          "observations": {
+            "separated_players": [
+              "player-1",
+              "player-2"
+            ],
+            "saved_input_restored": true,
+            "reduced_motion_and_mute_retained": true
+          }
+        },
+        {
+          "name": "short-viewport-scroll-and-zoom-equivalent-layout",
+          "status": "passed",
+          "duration_ms": 4631,
+          "observations": {
+            "short_viewport": [
+              960,
+              420
+            ],
+            "css_viewport_equivalent_to_200_percent_zoom_on_1440x900": [
+              720,
+              450
+            ],
+            "note": "Viewport emulation verifies the layout footprint; it is not native browser-UI zoom."
+          }
+        },
+        {
+          "name": "performance-sample-and-practice-remains-untimed",
+          "status": "passed",
+          "duration_ms": 3907,
+          "observations": {
+            "sample_duration_ms": 2527.699999999255,
+            "rendered_frame_intervals": 102,
+            "mean_frame_ms": 24.50882352941176,
+            "p95_frame_ms": 33.400000000001455,
+            "heap_bytes": 86400000,
+            "environment": "headless Chromium, software WebGL on managed Linux"
+          }
+        },
+        {
+          "name": "mobile-touch-only-complete-session",
+          "status": "passed",
+          "duration_ms": 9302,
+          "observations": {
+            "viewport": [
+              390,
+              844
+            ],
+            "godot_viewport": {
+              "h": 844,
+              "w": 390
+            },
+            "canvas_css_bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 390,
+              "height": 844
+            },
+            "device_scale_factor": 2,
+            "touch_only_navigation_and_answers": true,
+            "completed_gates": 6
+          }
+        },
+        {
+          "name": "production-qa-absence-and-offline-reload",
+          "status": "passed",
+          "duration_ms": 2146,
+          "observations": {
+            "qa_interface_absent": true,
+            "service_worker_controlled": true,
+            "offline_reload_and_answer": true,
+            "reconnect": true,
+            "expected_offline_network_failures": 0,
+            "logs": {
+              "console": [],
+              "page_errors": [],
+              "failed_requests": [],
+              "http_errors": []
+            }
+          }
+        },
+        {
+          "name": "blocked-browser-storage-is-visible-and-game-remains-playable",
+          "status": "passed",
+          "duration_ms": 6926,
+          "observations": {
+            "fault": "QuotaExceededError on Storage.setItem",
+            "gameplay_completed": true,
+            "visible_save_error": "Browser storage is full or unavailable. Keep the game open and export this result.",
+            "exported_unsaved_result": true
+          }
+        },
+        {
+          "name": "browser-runtime-and-resource-errors",
+          "status": "passed"
+        }
+      ],
+      "screenshots": [
+        "evidence/screenshots/release-final-2-chromium-01-menu.png",
+        "evidence/screenshots/release-final-2-chromium-02-modes.png",
+        "evidence/screenshots/release-final-2-chromium-03-setup.png",
+        "evidence/screenshots/release-final-2-chromium-04-playing.png",
+        "evidence/screenshots/release-final-2-chromium-05-results.png",
+        "evidence/screenshots/release-final-2-chromium-results-practice-division.png",
+        "evidence/screenshots/release-final-2-chromium-results-classic-division.png",
+        "evidence/screenshots/release-final-2-chromium-results-cadence-addition.png",
+        "evidence/screenshots/release-final-2-chromium-results-cadence-subtraction.png",
+        "evidence/screenshots/release-final-2-chromium-results-cadence-multiplication.png",
+        "evidence/screenshots/release-final-2-chromium-results-cadence-division.png",
+        "evidence/screenshots/release-final-2-chromium-results-cadence-mixed.png",
+        "evidence/screenshots/release-final-2-chromium-06-wrong-answer.png",
+        "evidence/screenshots/release-final-2-chromium-07-hint.png",
+        "evidence/screenshots/release-final-2-chromium-08-paused.png",
+        "evidence/screenshots/release-final-2-chromium-08-browser-help-paused.png",
+        "evidence/screenshots/release-final-2-chromium-results-long-session-export.png",
+        "evidence/screenshots/release-final-2-chromium-09-timeout.png",
+        "evidence/screenshots/release-final-2-chromium-10-resume-menu.png",
+        "evidence/screenshots/release-final-2-chromium-11-progress.png",
+        "evidence/screenshots/release-final-2-chromium-12-settings.png",
+        "evidence/screenshots/release-final-2-chromium-13-short-menu.png",
+        "evidence/screenshots/release-final-2-chromium-14-zoom-equivalent-game.png",
+        "evidence/screenshots/release-final-2-chromium-15-short-paused.png",
+        "evidence/screenshots/release-final-2-chromium-16-mobile-menu.png",
+        "evidence/screenshots/release-final-2-chromium-17-mobile-playing.png",
+        "evidence/screenshots/release-final-2-chromium-18-mobile-results.png",
+        "evidence/screenshots/release-final-2-chromium-19-offline-play.png",
+        "evidence/screenshots/release-final-2-chromium-20-storage-unavailable-results.png"
+      ],
+      "recordings": [],
+      "logs": {
+        "console": [],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "launch_configuration": {
+        "headless": true,
+        "virtual_display": false,
+        "software_rendering": true
+      },
+      "browser_version": "141.0.7390.37",
+      "startup": {
+        "wall_startup_ms": 1434,
+        "engine_loaded_ms": 1144.699999999255
+      }
+    },
+    {
+      "engine": "firefox",
+      "status": "passed",
+      "scenarios": [
+        {
+          "name": "first-launch-menu-and-keyboard-navigation",
+          "status": "passed",
+          "duration_ms": 6512,
+          "observations": {
+            "completed_gates": 6,
+            "keyboard_only": true,
+            "replay_started": true,
+            "seed": 73
+          }
+        },
+        {
+          "name": "complete-classic-multiplication",
+          "status": "passed",
+          "duration_ms": 7592,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393700756-2743079684"
+          }
+        },
+        {
+          "name": "complete-cadence-division",
+          "status": "passed",
+          "duration_ms": 6989,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393708025-2365123506"
+          }
+        },
+        {
+          "name": "wrong-retry-hint-and-rapid-submission-evidence",
+          "status": "passed",
+          "duration_ms": 8053,
+          "observations": {
+            "result": {
+              "accuracy": 0.833333333333333,
+              "active_seconds": 6.645,
+              "assisted": 1,
+              "attempts": 8,
+              "collisions": 0,
+              "completed": 6,
+              "created_at": "2026-10-30T20:55:15",
+              "eventual_correct": 6,
+              "facts": [
+                {
+                  "assisted": true,
+                  "attempts": 3,
+                  "correct": true,
+                  "first_correct": false,
+                  "first_latency": 0.39,
+                  "id": 1,
+                  "key": "5+4",
+                  "latencies": [
+                    0.39,
+                    0.217,
+                    0.507
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 2,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.148,
+                  "id": 2,
+                  "key": "2+1",
+                  "latencies": [
+                    0.148
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.111,
+                  "id": 3,
+                  "key": "5+4",
+                  "latencies": [
+                    0.111
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.133,
+                  "id": 4,
+                  "key": "1+4",
+                  "latencies": [
+                    0.133
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.134,
+                  "id": 5,
+                  "key": "0+5",
+                  "latencies": [
+                    0.134
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.137,
+                  "id": 6,
+                  "key": "0+4",
+                  "latencies": [
+                    0.137
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                }
+              ],
+              "first_try_correct": 5,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 6,
+              "learner_id": "player-1",
+              "mean_response_seconds": 0.1755,
+              "mode": "practice",
+              "operation": "addition",
+              "questions_presented": 6,
+              "range": 5,
+              "response_samples": 6,
+              "retries": 2,
+              "seed": 73,
+              "session_id": "player-1-1793393715163-755758370",
+              "submitted_answers": 8,
+              "target": 6,
+              "timeouts": 0
+            }
+          }
+        },
+        {
+          "name": "pause-freezes-clock-course-and-answer-input",
+          "status": "passed",
+          "duration_ms": 3829,
+          "observations": {
+            "pause_interval_ms": 1100,
+            "active_time_drift_seconds": 0,
+            "frozen_course": true
+          }
+        },
+        {
+          "name": "browser-help-dialog-pauses-active-game",
+          "status": "passed",
+          "duration_ms": 3792,
+          "observations": {
+            "focus_setup": "Explicit focus of the HTML help button",
+            "activation": "Real Enter key",
+            "help_interval_ms": 1200,
+            "active_time_drift_seconds": 0,
+            "explicit_resume": true
+          }
+        },
+        {
+          "name": "browser-runtime-and-resource-errors",
+          "status": "passed"
+        }
+      ],
+      "screenshots": [
+        "evidence/screenshots/release-final-2-firefox-01-menu.png",
+        "evidence/screenshots/release-final-2-firefox-02-modes.png",
+        "evidence/screenshots/release-final-2-firefox-03-setup.png",
+        "evidence/screenshots/release-final-2-firefox-04-playing.png",
+        "evidence/screenshots/release-final-2-firefox-05-results.png",
+        "evidence/screenshots/release-final-2-firefox-results-cadence-division.png",
+        "evidence/screenshots/release-final-2-firefox-06-wrong-answer.png",
+        "evidence/screenshots/release-final-2-firefox-07-hint.png",
+        "evidence/screenshots/release-final-2-firefox-08-paused.png",
+        "evidence/screenshots/release-final-2-firefox-08-browser-help-paused.png"
+      ],
+      "recordings": [],
+      "logs": {
+        "console": [
+          {
+            "scenario": "startup",
+            "type": "warning",
+            "message": "[JavaScript Warning: \"The WebAssembly exception handling 'try' instruction is deprecated and should no longer be used. Please recompile to use the 'try_table' instruction instead.\"]"
+          }
+        ],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "launch_configuration": {
+        "headless": false,
+        "virtual_display": true,
+        "software_rendering": true
+      },
+      "browser_version": "142.0.1",
+      "startup": {
+        "wall_startup_ms": 2212,
+        "engine_loaded_ms": 1891
+      }
+    },
+    {
+      "engine": "webkit",
+      "status": "passed",
+      "scenarios": [
+        {
+          "name": "first-launch-menu-and-keyboard-navigation",
+          "status": "passed",
+          "duration_ms": 6321,
+          "observations": {
+            "completed_gates": 6,
+            "keyboard_only": true,
+            "replay_started": true,
+            "seed": 73
+          }
+        },
+        {
+          "name": "complete-classic-multiplication",
+          "status": "passed",
+          "duration_ms": 6940,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393743191-1427119170"
+          }
+        },
+        {
+          "name": "complete-cadence-division",
+          "status": "passed",
+          "duration_ms": 6697,
+          "observations": {
+            "gates": 6,
+            "attempts": 6,
+            "seed": 73,
+            "session_id": "player-1-1793393749718-322269351"
+          }
+        },
+        {
+          "name": "wrong-retry-hint-and-rapid-submission-evidence",
+          "status": "passed",
+          "duration_ms": 7093,
+          "observations": {
+            "result": {
+              "accuracy": 0.833333333333333,
+              "active_seconds": 6.08,
+              "assisted": 1,
+              "attempts": 8,
+              "collisions": 0,
+              "completed": 6,
+              "created_at": "2026-10-30T20:55:56",
+              "eventual_correct": 6,
+              "facts": [
+                {
+                  "assisted": true,
+                  "attempts": 3,
+                  "correct": true,
+                  "first_correct": false,
+                  "first_latency": 0.252,
+                  "id": 1,
+                  "key": "5+4",
+                  "latencies": [
+                    0.252,
+                    0.202,
+                    0.347
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 2,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.088,
+                  "id": 2,
+                  "key": "2+1",
+                  "latencies": [
+                    0.088
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.085,
+                  "id": 3,
+                  "key": "5+4",
+                  "latencies": [
+                    0.085
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.102,
+                  "id": 4,
+                  "key": "1+4",
+                  "latencies": [
+                    0.102
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.073,
+                  "id": 5,
+                  "key": "0+5",
+                  "latencies": [
+                    0.073
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                },
+                {
+                  "assisted": false,
+                  "attempts": 1,
+                  "correct": true,
+                  "first_correct": true,
+                  "first_latency": 0.103,
+                  "id": 6,
+                  "key": "0+4",
+                  "latencies": [
+                    0.103
+                  ],
+                  "observed": true,
+                  "resolved": true,
+                  "retries": 0,
+                  "timeout_latencies": [],
+                  "timeouts": 0
+                }
+              ],
+              "first_try_correct": 5,
+              "first_try_metric_version": 1,
+              "first_try_opportunities": 6,
+              "learner_id": "player-1",
+              "mean_response_seconds": 0.117166666666667,
+              "mode": "practice",
+              "operation": "addition",
+              "questions_presented": 6,
+              "range": 5,
+              "response_samples": 6,
+              "retries": 2,
+              "seed": 73,
+              "session_id": "player-1-1793393756417-3883899498",
+              "submitted_answers": 8,
+              "target": 6,
+              "timeouts": 0
+            }
+          }
+        },
+        {
+          "name": "pause-freezes-clock-course-and-answer-input",
+          "status": "passed",
+          "duration_ms": 3564,
+          "observations": {
+            "pause_interval_ms": 1100,
+            "active_time_drift_seconds": 0,
+            "frozen_course": true
+          }
+        },
+        {
+          "name": "browser-help-dialog-pauses-active-game",
+          "status": "passed",
+          "duration_ms": 3365,
+          "observations": {
+            "focus_setup": "Explicit focus of the HTML help button",
+            "activation": "Real Enter key",
+            "help_interval_ms": 1200,
+            "active_time_drift_seconds": 0,
+            "explicit_resume": true
+          }
+        },
+        {
+          "name": "browser-runtime-and-resource-errors",
+          "status": "passed"
+        }
+      ],
+      "screenshots": [
+        "evidence/screenshots/release-final-2-webkit-01-menu.png",
+        "evidence/screenshots/release-final-2-webkit-02-modes.png",
+        "evidence/screenshots/release-final-2-webkit-03-setup.png",
+        "evidence/screenshots/release-final-2-webkit-04-playing.png",
+        "evidence/screenshots/release-final-2-webkit-05-results.png",
+        "evidence/screenshots/release-final-2-webkit-results-cadence-division.png",
+        "evidence/screenshots/release-final-2-webkit-06-wrong-answer.png",
+        "evidence/screenshots/release-final-2-webkit-07-hint.png",
+        "evidence/screenshots/release-final-2-webkit-08-paused.png",
+        "evidence/screenshots/release-final-2-webkit-08-browser-help-paused.png"
+      ],
+      "recordings": [],
+      "logs": {
+        "console": [],
+        "page_errors": [],
+        "failed_requests": [],
+        "http_errors": []
+      },
+      "launch_configuration": {
+        "headless": true,
+        "virtual_display": false,
+        "software_rendering": true
+      },
+      "browser_version": "26.0",
+      "startup": {
+        "wall_startup_ms": 5184,
+        "engine_loaded_ms": 3121
+      }
+    }
+  ],
+  "limitations": [
+    "Software-rendered cloud browser performance is not representative of a physical low-powered phone.",
+    "Sound preference and browser activation are exercised; audible sound quality is not automatically judged.",
+    "Corrupt-save injection and malformed checkpoint validation are covered by the native component suite, not fabricated as browser passes."
+  ],
+  "source_start": {
+    "sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+    "files": {
+      "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+      "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+      "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+      "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+      "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+      "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+      "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+      "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+      "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+      "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+      "tests/browser.mjs": "b8e1b65d83b62af52dee28cc1f0f21a768c35cca74fd4dc7c0f1fedcbbe4dac0",
+      "tools/export_web.sh": "2148cbb213a4109caf1314c414fc07f99e79a00693bfb2fd40e48816bb42d526",
+      "tools/finalize_web.py": "913953fd06e6327dfeca22e6ea9ba6417e0fe49d7d14271697ae6b318c9e71c2",
+      "web/shell.html": "59995fad289e0a4ede80ef33d02c4b2393169ac1584a4e5e875e0d114eef4c39"
+    }
+  },
+  "build_manifest_start": {
+    "engine": "4.7.2.stable",
+    "threads": false,
+    "renderer": "Compatibility",
+    "runtime_presentation": "browser implicit swap; Emscripten offscreen backbuffer disabled",
+    "build_id": "a9f5adc38198c5eb",
+    "files": {
+      "index.apple-touch-icon.png": {
+        "bytes": 9909,
+        "sha256": "3b15501af011db8fe5a89f050149748554cc9dee55cac6b6e6a2a6fde4dce410"
+      },
+      "index.audio.position.worklet.js": {
+        "bytes": 2973,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      "index.audio.worklet.js": {
+        "bytes": 7298,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      "index.html": {
+        "bytes": 5191,
+        "sha256": "b58e79012ccc7257add96978fb0c37b5801fd3e1e0b5db6095a487856a488934"
+      },
+      "index.icon.png": {
+        "bytes": 4253,
+        "sha256": "691c08541ab7165455ee3304566aa31d7272dda3dc0e89cbc46ffa72fdcb9df5"
+      },
+      "index.js": {
+        "bytes": 279785,
+        "sha256": "837ee06223fef871a8c01d3dd8534f85b9fa1dce23005e53a6ad3d27482959d4"
+      },
+      "index.pck": {
+        "bytes": 515212,
+        "sha256": "56e851f131b261a1d5f118502df252d5157617150c073461a60aefa99c92c4b6"
+      },
+      "index.png": {
+        "bytes": 21443,
+        "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+      },
+      "index.wasm": {
+        "bytes": 39514754,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      }
+    }
+  },
+  "runtime_start": {
+    "sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+    "files": {
+      "index.apple-touch-icon.png": "3b15501af011db8fe5a89f050149748554cc9dee55cac6b6e6a2a6fde4dce410",
+      "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "index.html": "b58e79012ccc7257add96978fb0c37b5801fd3e1e0b5db6095a487856a488934",
+      "index.icon.png": "691c08541ab7165455ee3304566aa31d7272dda3dc0e89cbc46ffa72fdcb9df5",
+      "index.js": "837ee06223fef871a8c01d3dd8534f85b9fa1dce23005e53a6ad3d27482959d4",
+      "index.pck": "56e851f131b261a1d5f118502df252d5157617150c073461a60aefa99c92c4b6",
+      "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "offline-worker.js": "d7796c67017c253afcc73eb34b76c0a5dabe8ebf3ab95938d895475729bc5d83"
+    }
+  },
+  "selected_case_filter": null,
+  "smoke_only": false,
+  "video_recording": false,
+  "finished_at": "2026-10-30T20:56:09.580Z",
+  "source_end": {
+    "sha256": "0fe8a6af079a38ac50d4c8dc5362d3aabf43f618cc40aba1f988f09162726660",
+    "files": {
+      "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+      "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+      "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+      "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+      "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+      "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+      "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+      "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+      "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+      "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+      "tests/browser.mjs": "b8e1b65d83b62af52dee28cc1f0f21a768c35cca74fd4dc7c0f1fedcbbe4dac0",
+      "tools/export_web.sh": "2148cbb213a4109caf1314c414fc07f99e79a00693bfb2fd40e48816bb42d526",
+      "tools/finalize_web.py": "913953fd06e6327dfeca22e6ea9ba6417e0fe49d7d14271697ae6b318c9e71c2",
+      "web/shell.html": "59995fad289e0a4ede80ef33d02c4b2393169ac1584a4e5e875e0d114eef4c39"
+    }
+  },
+  "build_manifest_end": {
+    "engine": "4.7.2.stable",
+    "threads": false,
+    "renderer": "Compatibility",
+    "runtime_presentation": "browser implicit swap; Emscripten offscreen backbuffer disabled",
+    "build_id": "a9f5adc38198c5eb",
+    "files": {
+      "index.apple-touch-icon.png": {
+        "bytes": 9909,
+        "sha256": "3b15501af011db8fe5a89f050149748554cc9dee55cac6b6e6a2a6fde4dce410"
+      },
+      "index.audio.position.worklet.js": {
+        "bytes": 2973,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      "index.audio.worklet.js": {
+        "bytes": 7298,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      "index.html": {
+        "bytes": 5191,
+        "sha256": "b58e79012ccc7257add96978fb0c37b5801fd3e1e0b5db6095a487856a488934"
+      },
+      "index.icon.png": {
+        "bytes": 4253,
+        "sha256": "691c08541ab7165455ee3304566aa31d7272dda3dc0e89cbc46ffa72fdcb9df5"
+      },
+      "index.js": {
+        "bytes": 279785,
+        "sha256": "837ee06223fef871a8c01d3dd8534f85b9fa1dce23005e53a6ad3d27482959d4"
+      },
+      "index.pck": {
+        "bytes": 515212,
+        "sha256": "56e851f131b261a1d5f118502df252d5157617150c073461a60aefa99c92c4b6"
+      },
+      "index.png": {
+        "bytes": 21443,
+        "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+      },
+      "index.wasm": {
+        "bytes": 39514754,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      }
+    }
+  },
+  "runtime_end": {
+    "sha256": "14a8aedb3a39242d6f3b320ad52e3480684e1bfdebdc611cb64113e7adade158",
+    "files": {
+      "index.apple-touch-icon.png": "3b15501af011db8fe5a89f050149748554cc9dee55cac6b6e6a2a6fde4dce410",
+      "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "index.html": "b58e79012ccc7257add96978fb0c37b5801fd3e1e0b5db6095a487856a488934",
+      "index.icon.png": "691c08541ab7165455ee3304566aa31d7272dda3dc0e89cbc46ffa72fdcb9df5",
+      "index.js": "837ee06223fef871a8c01d3dd8534f85b9fa1dce23005e53a6ad3d27482959d4",
+      "index.pck": "56e851f131b261a1d5f118502df252d5157617150c073461a60aefa99c92c4b6",
+      "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "offline-worker.js": "d7796c67017c253afcc73eb34b76c0a5dabe8ebf3ab95938d895475729bc5d83"
+    }
+  },
+  "source_changed_during_run": false,
+  "status": "passed"
+}

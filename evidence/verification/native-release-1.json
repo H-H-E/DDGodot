@@ -1,0 +1,228 @@
+{
+  "pass": 1,
+  "started_at": "2026-10-30T20:43:59.069235+00:00",
+  "source_start": {
+    "sha256": "8d53abfc1ed8ad989f27ae2ad5f2045f17f3e564bfcff1a9299c8d1c2bcbfc92",
+    "files": {
+      "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+      "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+      "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+      "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+      "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+      "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+      "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+      "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+      "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+      "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+      "tests/browser.mjs": "b8e1b65d83b62af52dee28cc1f0f21a768c35cca74fd4dc7c0f1fedcbbe4dac0",
+      "tests/fixtures/learning_original.json": "53ae3bec1bae6288ab7f96d96c40699069ec0654f7b0f9eb2316268984484194",
+      "tests/test_game.gd": "b6f9bbf2e696728b7c847b7616d451f23225249b34df6c6f07f9dad0dc379785",
+      "tests/test_learning.gd": "a921a1a6f2da3d1322d0c96e78fd09930e7b79df032d743591b62cb414228635",
+      "tests/test_session.gd": "8c62043da3abb2b6c64238ce82c3255e624742121c57c2804b08af76391a9e40",
+      "tools/autopilot_bootstrap.gd": "d4d38a534c24f0f637cdc9bbcab131ce528a013b0be42cb1b022b79031d1649f",
+      "tools/autopilot_local.py": "cad2d60f5b5a26e905d2d3f036f7743b64182bcd69fc05e205d803283cd94a3a",
+      "tools/export_web.sh": "2148cbb213a4109caf1314c414fc07f99e79a00693bfb2fd40e48816bb42d526",
+      "tools/finalize_web.py": "913953fd06e6327dfeca22e6ea9ba6417e0fe49d7d14271697ae6b318c9e71c2",
+      "tools/generate_learning_fixtures.mjs": "a3d5e564cd143289f744c16f987f282754c89f1a4e710267e06515a4fa7efc32",
+      "tools/install_godot.sh": "7ca9e5f5eb09dd56da64fb4800b4bdab03d8df60afecabc9988205ce97d584e0",
+      "tools/run_checks.sh": "ef9ef683070be03642cd28ca8e7857da697806c6e406bc25a1e934bb2e1a37d9",
+      "tools/serve.py": "7fcc29fb8ee53e5a7717b051f9676017475de7caa55d6228b85a1aa855b99730",
+      "web/shell.html": "59995fad289e0a4ede80ef33d02c4b2393169ac1584a4e5e875e0d114eef4c39"
+    }
+  },
+  "suites": [
+    {
+      "suite": "learning",
+      "command": [
+        "/tmp/ddgodot-tools/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        ".",
+        "--script",
+        "tests/test_learning.gd"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.875,
+      "engine_errors": [],
+      "result": {
+        "assertions": 8267,
+        "details": [],
+        "failures": 0,
+        "scenarios": 11
+      },
+      "log": "evidence/verification/native-learning-1.log"
+    },
+    {
+      "suite": "game",
+      "command": [
+        "/tmp/ddgodot-tools/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        ".",
+        "--script",
+        "tests/test_game.gd"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.467,
+      "engine_errors": [],
+      "result": {
+        "assertions": 13203,
+        "engine": "4.7.2-stable (official)",
+        "failures": [],
+        "passed": true,
+        "scenarios": [
+          {
+            "assertions": 11553,
+            "name": "Seeded routes and inputs reproduce the same simulation",
+            "passed": true
+          },
+          {
+            "assertions": 721,
+            "name": "Checkpoint restoration reproduces continuation and future hazards",
+            "passed": true
+          },
+          {
+            "assertions": 9,
+            "name": "Jump has a usable arc, lands and rejects airborne double jumps",
+            "passed": true
+          },
+          {
+            "assertions": 6,
+            "name": "A late airborne input is buffered into the next landing",
+            "passed": true
+          },
+          {
+            "assertions": 8,
+            "name": "Collision registers once and recovers without clearing a gate",
+            "passed": true
+          },
+          {
+            "assertions": 288,
+            "name": "Assistance clears hazards across seeds, paces and step rates",
+            "passed": true
+          },
+          {
+            "assertions": 6,
+            "name": "Manual timely jump clears a hazard at all supported paces",
+            "passed": true
+          },
+          {
+            "assertions": 8,
+            "name": "Practice waits indefinitely and a solved gate releases the route",
+            "passed": true
+          },
+          {
+            "assertions": 4,
+            "name": "Waiting stops forward motion; correct clearing removes its hazard",
+            "passed": true
+          },
+          {
+            "assertions": 600,
+            "name": "Long simulation stays finite and bounded",
+            "passed": true
+          }
+        ],
+        "suite": "native-course"
+      },
+      "log": "evidence/verification/native-game-1.log"
+    },
+    {
+      "suite": "session",
+      "command": [
+        "/tmp/ddgodot-tools/Godot_v4.7.2-stable_linux.x86_64",
+        "--headless",
+        "--path",
+        ".",
+        "--script",
+        "tests/test_session.gd"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 12.596,
+      "engine_errors": [],
+      "result": {
+        "assertions": 138,
+        "engine": "4.7.2-stable (official)",
+        "failures": [],
+        "passed": true,
+        "scenarios": [
+          {
+            "assertions": 36,
+            "name": "Real input produces honest first-attempt, retry and hint results",
+            "passed": true
+          },
+          {
+            "assertions": 14,
+            "name": "Pause blocks answer input, simulation and active clocks",
+            "passed": true
+          },
+          {
+            "assertions": 17,
+            "name": "Interrupted session restores explicitly without counting time away",
+            "passed": true
+          },
+          {
+            "assertions": 13,
+            "name": "Saved run cannot be overwritten through the start path",
+            "passed": true
+          },
+          {
+            "assertions": 21,
+            "name": "Corrupted outer checkpoint is rejected without deleting it",
+            "passed": true
+          },
+          {
+            "assertions": 5,
+            "name": "Local learner preferences and records remain separated",
+            "passed": true
+          },
+          {
+            "assertions": 12,
+            "name": "Finishing an unanswered question never fabricates evidence",
+            "passed": true
+          },
+          {
+            "assertions": 20,
+            "name": "A real timed deadline remains retryable without fake response latency",
+            "passed": true
+          }
+        ],
+        "suite": "native-session"
+      },
+      "log": "evidence/verification/native-session-1.log"
+    }
+  ],
+  "source_end": {
+    "sha256": "8d53abfc1ed8ad989f27ae2ad5f2045f17f3e564bfcff1a9299c8d1c2bcbfc92",
+    "files": {
+      "assets/fonts/DejaVuSans.ttf": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280",
+      "assets/icon.svg": "0067ba00dde044a84b9a986e01943130e3f24cd6e2f2def6b133e60df320011e",
+      "export_presets.cfg": "3fe1b9b2f9f7da4ad56c5a5fc3cd2efad5ede37c68343b8d6eea90846bd99a64",
+      "project.godot": "5edb89f31e5599e7058d9ed0a0c4b11732a7cf999ffa632e4265c89129f2b5cb",
+      "scenes/main.tscn": "dc21ebb3502df28b6fcf9d6d3976a5af0afdecd56f07597e26fc65584d04cca4",
+      "scripts/course.gd": "57b628d9aef3f7034b74c6429b49d38d5eaf70f90becf1ffddcef6dc89dc204c",
+      "scripts/learning.gd": "2b39f3776ea82ac7b0465c944de98fa27c77a15a2e1950a2a0564e94dca2b2e0",
+      "scripts/main.gd": "5b00d18d862e3be7db0983d25fa0bf3da32840f23a9008143a8fbbcf021988a3",
+      "scripts/runner_view.gd": "d8df14d28719403a5fe1715e957c008f0f38611ad907ae3cf7b2b4675ed36346",
+      "scripts/save_store.gd": "5c47f3212042ea6bd74297e120c2ab19556cc6aaf5df9fc67c7102f6158a2175",
+      "scripts/sound.gd": "ffbe4348bdba896fed92e51f4024435cc48cf1bb1e20e93249df525b4359c304",
+      "tests/browser.mjs": "b8e1b65d83b62af52dee28cc1f0f21a768c35cca74fd4dc7c0f1fedcbbe4dac0",
+      "tests/fixtures/learning_original.json": "53ae3bec1bae6288ab7f96d96c40699069ec0654f7b0f9eb2316268984484194",
+      "tests/test_game.gd": "b6f9bbf2e696728b7c847b7616d451f23225249b34df6c6f07f9dad0dc379785",
+      "tests/test_learning.gd": "a921a1a6f2da3d1322d0c96e78fd09930e7b79df032d743591b62cb414228635",
+      "tests/test_session.gd": "8c62043da3abb2b6c64238ce82c3255e624742121c57c2804b08af76391a9e40",
+      "tools/autopilot_bootstrap.gd": "d4d38a534c24f0f637cdc9bbcab131ce528a013b0be42cb1b022b79031d1649f",
+      "tools/autopilot_local.py": "cad2d60f5b5a26e905d2d3f036f7743b64182bcd69fc05e205d803283cd94a3a",
+      "tools/export_web.sh": "2148cbb213a4109caf1314c414fc07f99e79a00693bfb2fd40e48816bb42d526",
+      "tools/finalize_web.py": "913953fd06e6327dfeca22e6ea9ba6417e0fe49d7d14271697ae6b318c9e71c2",
+      "tools/generate_learning_fixtures.mjs": "a3d5e564cd143289f744c16f987f282754c89f1a4e710267e06515a4fa7efc32",
+      "tools/install_godot.sh": "7ca9e5f5eb09dd56da64fb4800b4bdab03d8df60afecabc9988205ce97d584e0",
+      "tools/run_checks.sh": "ef9ef683070be03642cd28ca8e7857da697806c6e406bc25a1e934bb2e1a37d9",
+      "tools/serve.py": "7fcc29fb8ee53e5a7717b051f9676017475de7caa55d6228b85a1aa855b99730",
+      "web/shell.html": "59995fad289e0a4ede80ef33d02c4b2393169ac1584a4e5e875e0d114eef4c39"
+    }
+  },
+  "source_unchanged": true,
+  "finished_at": "2026-10-30T20:44:14.013839+00:00",
+  "status": "passed"
+}
